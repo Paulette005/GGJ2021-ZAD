@@ -1,18 +1,65 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://DGodot/assets/icon.png" type="Texture" id=1]
+[ext_resource path="res://DGodot/assets/ZoneSouvenirs/barricades/barricades1.png" type="Texture" id=1]
 [ext_resource path="res://DGodot/scripts/IDSouvenirs.gd" type="Script" id=2]
+[ext_resource path="res://DGodot/assets/ZoneSouvenirs/barricades/baricades7.png" type="Texture" id=3]
+[ext_resource path="res://DGodot/assets/ZoneSouvenirs/barricades/barricades3.png" type="Texture" id=4]
+[ext_resource path="res://DGodot/assets/ZoneSouvenirs/barricades/barricades4.png" type="Texture" id=5]
+[ext_resource path="res://DGodot/assets/ZoneSouvenirs/barricades/barricades6.png" type="Texture" id=6]
+[ext_resource path="res://DGodot/assets/ZoneSouvenirs/barricades/barricades2.png" type="Texture" id=7]
+[ext_resource path="res://DGodot/assets/ZoneSouvenirs/barricades/barricades5.png" type="Texture" id=8]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 66.9972
+radius = 461.822
 
 [node name="Barricades" type="Sprite"]
+position = Vector2( 596.023, 235.896 )
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
 IDSouvenirs = 1
+
+[node name="Sprite5" type="Sprite" parent="."]
+position = Vector2( -644.755, 130.742 )
+texture = ExtResource( 7 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -538.095, 211.393 )
+texture = ExtResource( 6 )
+
+[node name="Sprite8" type="Sprite" parent="."]
+position = Vector2( -996.818, 13.1799 )
+texture = ExtResource( 6 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 361.33, 83.9774 )
+texture = ExtResource( 6 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 321.366, 182 )
+texture = ExtResource( 3 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( -258.145, 307.421 )
+texture = ExtResource( 3 )
+
+[node name="Sprite6" type="Sprite" parent="."]
+position = Vector2( -392.823, -286.719 )
+texture = ExtResource( 5 )
+
+[node name="Sprite7" type="Sprite" parent="."]
+position = Vector2( -586.823, -256.719 )
+texture = ExtResource( 4 )
+
+[node name="Sprite9" type="Sprite" parent="."]
+position = Vector2( 492.579, -334.244 )
+texture = ExtResource( 8 )
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 0.75, 0.25 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -112, 28 )
 shape = SubResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( -298.988, 72.7273, -199.207, -14.5807, -195.643, -66.2528, -122.59, -64.471, -104.772, -46.6531, -40.627, -59.1256, 50.2448, -34.1805, 125.08, -34.1805, 153.589, -87.6344, 208.825, -80.5072, 223.079, -21.7079, 278.315, -39.5259, 297.915, 44.2186, 353.15, 26.4006, 433.331, 62.0365, 460.058, 119.054, 367.405, 120.836, 367.405, 204.58, 285.442, 208.144, 271.188, 138.654, 264.06, 103.018, 194.57, 69.1637, 37.7721, 72.7273, -129.717, 72.7273 )

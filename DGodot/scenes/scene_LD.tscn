@@ -132,7 +132,6 @@ position = Vector2( -1146.48, -1960.62 )
 position = Vector2( -1272.34, -1885.71 )
 
 [node name="turquoise" parent="LD/arbres/groupe milieu haut" instance=ExtResource( 24 )]
-position = Vector2( -937.705, -1826.87 )
 
 [node name="sapin bleu" parent="LD/arbres/groupe milieu haut" instance=ExtResource( 33 )]
 position = Vector2( -409.179, -2326.13 )

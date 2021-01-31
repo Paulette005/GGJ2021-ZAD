@@ -1,13 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://DGodot/assets/icon.png" type="Texture" id=1]
+[ext_resource path="res://DGodot/assets/ZoneSouvenirs/cuisine/cuisine1.png" type="Texture" id=1]
 [ext_resource path="res://DGodot/scripts/IDSouvenirs.gd" type="Script" id=2]
+[ext_resource path="res://DGodot/assets/ZoneSouvenirs/barricades/barricades4.png" type="Texture" id=3]
+[ext_resource path="res://DGodot/assets/ZoneSouvenirs/cuisine/cuisine2.png" type="Texture" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 66.9972
+radius = 262.831
 
 [node name="FourPain" type="Sprite"]
-texture = ExtResource( 1 )
+position = Vector2( 208.778, 381.637 )
+texture = ExtResource( 4 )
 script = ExtResource( 2 )
 IDSouvenirs = 3
 
@@ -16,3 +19,11 @@ position = Vector2( 0.75, 0.25 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 1 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 365.922, -208.778 )
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 452.839, -157.605 )
+texture = ExtResource( 1 )
