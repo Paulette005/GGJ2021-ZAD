@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://DGodot/assets/Arbres/arbre1.png" type="Texture" id=1]
+[ext_resource path="res://DGodot/scripts/z_index.gd" type="Script" id=2]
+
+[node name="fin1" type="Sprite"]
+position = Vector2( -0.309845, -2.45638 )
+texture = ExtResource( 1 )
+offset = Vector2( -17.9796, -245.722 )
+script = ExtResource( 2 )

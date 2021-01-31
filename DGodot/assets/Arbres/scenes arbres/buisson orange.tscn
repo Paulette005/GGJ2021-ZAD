@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://DGodot/assets/Buissons/buisson3.png" type="Texture" id=1]
+[ext_resource path="res://DGodot/scripts/z_index.gd" type="Script" id=2]
+
+[node name="buisson orange" type="Sprite"]
+position = Vector2( -0.00897217, -1.0126 )
+texture = ExtResource( 1 )
+offset = Vector2( 4, -70 )
+script = ExtResource( 2 )

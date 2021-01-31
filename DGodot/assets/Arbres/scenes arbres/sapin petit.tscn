@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://DGodot/assets/Arbres/arbre2.png" type="Texture" id=1]
+[ext_resource path="res://DGodot/scripts/z_index.gd" type="Script" id=2]
+
+[node name="sapin petit" type="Sprite"]
+position = Vector2( -1.20499, 0.391998 )
+texture = ExtResource( 1 )
+offset = Vector2( 2.44379, -203.954 )
+script = ExtResource( 2 )
