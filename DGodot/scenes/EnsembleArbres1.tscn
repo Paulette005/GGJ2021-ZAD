@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://DGodot/assets/Arbres/arbre3.png" type="Texture" id=1]
+[ext_resource path="res://DGodot/assets/Arbres/arbre1.png" type="Texture" id=2]
+[ext_resource path="res://DGodot/assets/Arbres/arbre11.png" type="Texture" id=3]
+[ext_resource path="res://DGodot/assets/Arbres/arbre5.png" type="Texture" id=4]
+
+[node name="Sprite" type="Sprite"]
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 279.742, 345.669 )
+texture = ExtResource( 4 )
+
+[node name="Sprite6" type="Sprite" parent="."]
+position = Vector2( 568.902, 352.796 )
+texture = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 447.267, 378.177 )
+texture = ExtResource( 1 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+position = Vector2( 150.98, 367.05 )
+texture = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( 156, 599.36, 596, 599.36, 594, 423.36, 630, 381.36, 658, 293.36, 632, 165.36, 588, 149.36, 520, 199.36, 432, 179.36, 374, 191.36, 314, 127.36, 262, 175.36, 186, 179.36, 160, 139.36, 132, 165.36, 96, 217.36, 120, 329.36, 138, 395.36, 110, 511.36 )

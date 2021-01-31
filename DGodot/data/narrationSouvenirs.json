@@ -1,0 +1,109 @@
+{
+  "Route": {
+    "Souvenirs": "Route",
+    "ID": 0,
+    "Dialogue1":[
+			{
+				"Text": "Voici la route, le départ."
+			},
+			{
+				"Text": "Moi c’est Eleanor, mais tout le monde m’appelle Charybde."
+			},
+			],
+    "Dialogue2":[
+           {
+				"Text": "Faut que je me concentre sur la mer pour mes cartes."
+			}
+			]
+			},
+			
+  "Ruines": {
+    "Souvenirs": "Ruines",
+    "ID": 1,
+    "Dialogue1":[
+			{
+				"Text": "Salut, bienvenue à bord !"
+			},
+			{
+				"Text": "Moi c’est Eleanor, mais tout le monde m’appelle Charybde."
+			},
+			],
+    "Dialogue2":[
+           {
+				"Text": "Faut que je me concentre sur la mer pour mes cartes."
+			}
+			]
+			},
+			
+ "RuinesChampi": {
+    "Souvenirs": "RuinesChampi",
+    "ID": 2,
+    "Dialogue1":[
+			{
+				"Text": "Salut, bienvenue à bord !"
+			},
+			{
+				"Text": "Moi c’est Eleanor, mais tout le monde m’appelle Charybde."
+			},
+			],
+    "Dialogue2":[
+           {
+				"Text": "Faut que je me concentre sur la mer pour mes cartes."
+			}
+			]
+			},
+			
+"Barricades": {
+    "Souvenirs": "Barricades",
+    "ID": 3,
+    "Dialogue1":[
+			{
+				"Text": "Salut, bienvenue à bord !"
+			},
+			{
+				"Text": "Moi c’est Eleanor, mais tout le monde m’appelle Charybde."
+			},
+			],
+    "Dialogue2":[
+           {
+				"Text": "Faut que je me concentre sur la mer pour mes cartes."
+			}
+			]
+			},
+			
+"FourPain": {
+    "Souvenirs": "FourPain",
+    "ID": 4,
+    "Dialogue1":[
+			{
+				"Text": "Salut, bienvenue à bord !"
+			},
+			{
+				"Text": "Moi c’est Eleanor, mais tout le monde m’appelle Charybde."
+			},
+			],
+    "Dialogue2":[
+           {
+				"Text": "Faut que je me concentre sur la mer pour mes cartes."
+			}
+			]
+			},
+			
+"Habitations": {
+    "Souvenirs": "Habitations",
+    "ID": 5,
+    "Dialogue1":[
+			{
+				"Text": "Salut, bienvenue à bord !"
+			},
+			{
+				"Text": "Moi c’est Eleanor, mais tout le monde m’appelle Charybde."
+			},
+			],
+    "Dialogue2":[
+           {
+				"Text": "Faut que je me concentre sur la mer pour mes cartes."
+			}
+			]
+			}
+}

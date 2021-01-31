@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://DGodot/scripts/Boutons.gd" type="Script" id=1]
+[ext_resource path="res://DGodot/assets/icon.png" type="Texture" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 494.386
+margin_top = 426.277
+margin_right = 570.386
+margin_bottom = 570.277
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Jouer" type="TextureButton" parent="VBoxContainer"]
+margin_right = 76.0
+margin_bottom = 64.0
+focus_neighbour_bottom = NodePath("../Quitter")
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quitter" type="TextureButton" parent="VBoxContainer"]
+margin_top = 68.0
+margin_right = 76.0
+margin_bottom = 132.0
+focus_neighbour_top = NodePath("../Jouer")
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="VBoxContainer/Jouer" to="VBoxContainer/Jouer" method="_on_Jouer_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quitter" to="VBoxContainer/Quitter" method="_on_Quitter_pressed"]
