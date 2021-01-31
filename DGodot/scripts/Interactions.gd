@@ -1,7 +1,7 @@
 extends Sprite
 
 var playerZone = false
-var ID
+var IDSouvenirs
 
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 onready var BoiteDialogues = get_node("/root/Node2D/CanvasLayer/Dialogues/BoiteDialogues")
@@ -14,7 +14,7 @@ func on_body_entered(body):
 	if body.name == "Player":
 		playerZone = true
 		print("playerZone true")
-		print(ID)
+		print(IDSouvenirs)
 
 func on_body_exited(body):
 	if body.name == "Player":
@@ -27,3 +27,4 @@ func _input(event):
 
 func parle():
 	Dialogues.visible = true
+

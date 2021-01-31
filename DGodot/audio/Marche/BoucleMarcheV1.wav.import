@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/BoucleMarcheV1.wav-22a426b0ac213a03f5be7dce3150fc14.sample"
+
+[deps]
+
+source_file="res://DGodot/audio/Marche/BoucleMarcheV1.wav"
+dest_files=[ "res://.import/BoucleMarcheV1.wav-22a426b0ac213a03f5be7dce3150fc14.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

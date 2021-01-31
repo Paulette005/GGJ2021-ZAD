@@ -25,8 +25,11 @@ func _physics_process(delta):
 	
 	if mouvement == Vector2 (0,0):
 		$AnimatedSprite.play("idle")
+		#$Marche.play()
 	else:
 		$AnimatedSprite.play("walk")
+		
+		
 		
 	mouvement = mouvement.normalized()
 	

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://DGodot/assets/personnage/walk/perso_marche_3.png" type="Texture" id=1]
 [ext_resource path="res://DGodot/assets/personnage/walk/perso_marche_4.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://DGodot/assets/personnage/idle/perso_face.png" type="Texture" id=7]
 [ext_resource path="res://DGodot/assets/personnage/walk/perso_marche_2.png" type="Texture" id=8]
 [ext_resource path="res://DGodot/assets/personnage/walk/perso_marche_1.png" type="Texture" id=9]
+[ext_resource path="res://DGodot/audio/Marche/BoucleMarcheV1.wav" type="AudioStream" id=10]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -34,3 +35,6 @@ animation = "idle"
 position = Vector2( 4.9419, 54.2 )
 scale = Vector2( 1.13946, 3.10827 )
 polygon = PoolVector2Array( 6.65417, 2.19011, 23.6439, 8.56126, -1.12241, 9.87706, -23.7858, 8.32529, -9.1557, 1.01027 )
+
+[node name="Marche" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )

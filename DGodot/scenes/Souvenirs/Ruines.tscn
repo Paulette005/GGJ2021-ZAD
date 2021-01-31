@@ -9,6 +9,7 @@ radius = 66.9972
 [node name="Ruines" type="Sprite"]
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
+IDSouvenirs = 4
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 0.75, 0.25 )

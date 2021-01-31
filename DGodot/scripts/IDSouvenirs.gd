@@ -1,6 +1,6 @@
 extends Sprite
 
-export var ID = 1
+export var IDSouvenirs = 0
 
-func _ready():
-	pass
+
+

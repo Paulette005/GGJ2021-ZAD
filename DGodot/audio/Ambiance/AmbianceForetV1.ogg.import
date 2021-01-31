@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/AmbianceForetV1.ogg-19a207f31c8d9ab2a1522c29ff2b10d6.oggstr"
+
+[deps]
+
+source_file="res://DGodot/audio/Ambiance/AmbianceForetV1.ogg"
+dest_files=[ "res://.import/AmbianceForetV1.ogg-19a207f31c8d9ab2a1522c29ff2b10d6.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

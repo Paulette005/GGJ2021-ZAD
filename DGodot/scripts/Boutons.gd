@@ -1,8 +1,8 @@
 extends TextureButton
 
-func _input(event):
+#func _input(event):
 	
-		$Jouer.grabfocus()
+#		$grabfocus()
 
 func _on_Jouer_pressed():
 	get_tree().change_scene("res://DGodot/scenes/ScenePrincipale_Zad.tscn")
