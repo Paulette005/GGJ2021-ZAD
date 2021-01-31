@@ -41,37 +41,44 @@ position = Vector2( 951.389, 754.96 )
 script = ExtResource( 2 )
 
 [node name="RuinesChampi" parent="YSort" instance=ExtResource( 11 )]
-position = Vector2( -919.969, 758.195 )
+position = Vector2( -1704.15, 803.271 )
 script = ExtResource( 6 )
 
 [node name="Barricades" parent="YSort" instance=ExtResource( 12 )]
-position = Vector2( 569.258, 554.088 )
+position = Vector2( 473.149, 615.491 )
 script = ExtResource( 6 )
 
 [node name="FourPain" parent="YSort" instance=ExtResource( 10 )]
-position = Vector2( -836.814, -194.305 )
+position = Vector2( -1163.54, -244.056 )
 script = ExtResource( 6 )
 
 [node name="Habitations" parent="YSort" instance=ExtResource( 9 )]
-position = Vector2( 418.067, -403.452 )
+position = Vector2( 136.988, -1278.14 )
 script = ExtResource( 6 )
 
 [node name="Ruines" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( -826.735, 375.179 )
+position = Vector2( 1280.5, -396.197 )
 script = ExtResource( 6 )
 
 [node name="Route" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 789.087, 748.471 )
+position = Vector2( 487.413, 951.367 )
+scale = Vector2( 6.33936, 1 )
 script = ExtResource( 6 )
 
-[node name="Node2D" parent="YSort" instance=ExtResource( 14 )]
-position = Vector2( -665.367, -182.19 )
+[node name="Sprite3" parent="YSort" instance=ExtResource( 14 )]
+position = Vector2( 888.517, -333.102 )
+
+[node name="Sprite" parent="YSort" instance=ExtResource( 14 )]
+position = Vector2( 170.096, -327.445 )
+
+[node name="Sprite2" parent="YSort" instance=ExtResource( 14 )]
+position = Vector2( -638.834, -1272.14 )
 
 [node name="TextureRect" type="TextureRect" parent="YSort"]
-margin_left = 1345.2
-margin_top = -1242.85
-margin_right = 3742.2
-margin_bottom = 637.154
+margin_left = 2419.6
+margin_top = -2114.48
+margin_right = 6331.6
+margin_bottom = 953.521
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 13 )

@@ -19,10 +19,6 @@ config/name="Ggj 2021- Zad"
 run/main_scene="res://DGodot/scenes/ScenePrincipale_Zad.tscn"
 config/icon="res://icon.png"
 
-[autoload]
-
-ImportData="*res://DGodot/scripts/ImportData.gd"
-
 [rendering]
 
 environment/default_environment="res://default_env.tres"
