@@ -1,7 +1,7 @@
 extends Camera2D
 
 var target
-export var ciblePerso = "Node2D/YSort/Player"
+export var ciblePerso = "Node2D/Player"
 
 func _ready():
 	target = get_node("/root/"+ciblePerso)

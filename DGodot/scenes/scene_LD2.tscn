@@ -51,18 +51,18 @@ visible = false
 current = true
 zoom = Vector2( 1.5, 1.5 )
 limit_left = -3400
-limit_top = -3600
+limit_top = -3700
 limit_right = 2000
 limit_bottom = 1500
 limit_smoothed = true
 editor_draw_limits = true
 script = ExtResource( 33 )
 
-[node name="YSort" type="YSort" parent="."]
-
-[node name="Player" parent="YSort" instance=ExtResource( 5 )]
+[node name="Player" parent="." instance=ExtResource( 5 )]
 position = Vector2( 433.305, 1472.64 )
 script = ExtResource( 37 )
+
+[node name="YSort" type="YSort" parent="."]
 
 [node name="RuinesChampi" parent="YSort" instance=ExtResource( 12 )]
 position = Vector2( -1704.15, 803.271 )
@@ -101,7 +101,20 @@ position = Vector2( -653.262, -3287.29 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LD/arbres/haut"]
 visible = false
-polygon = PoolVector2Array( -1433.99, 123.057, -654.871, 144.034, 100.276, 287.871, 819.464, 159.017, 1805.35, 323.831, 1961.17, -224.55, -466.084, -419.33, -1514.9, -335.425, -2032.56, -299.933, -2055.78, 180.975, -1632.99, 242.346 )
+polygon = PoolVector2Array( -1433.99, 123.057, -654.871, 144.034, 100.276, 287.871, 819.464, 159.017, 1805.35, 323.831, 2026.34, 1014.44, 2107.06, 1236.43, 2096.97, 1791.42, 2500.6, 1956.24, 2635.88, -307.961, -466.084, -419.33, -1514.9, -335.425, -2032.56, -299.933, -2055.78, 180.975, -1632.99, 242.346 )
+
+[node name="sapin bleu8" parent="LD/arbres/haut" instance=ExtResource( 20 )]
+position = Vector2( -1378.54, -54.8357 )
+
+[node name="sapin bleu9" parent="LD/arbres/haut" instance=ExtResource( 20 )]
+position = Vector2( -1673.07, 42.635 )
+
+[node name="sapin turquoise5" parent="LD/arbres/haut" instance=ExtResource( 4 )]
+position = Vector2( -1880.67, 125.917 )
+
+[node name="sapin turquoise6" parent="LD/arbres/haut" instance=ExtResource( 4 )]
+position = Vector2( -2042.41, 437.489 )
+scale = Vector2( 1.2, 1.2 )
 
 [node name="sapin bleu4" parent="LD/arbres/haut" instance=ExtResource( 20 )]
 position = Vector2( 61.9131, 82.043 )
@@ -172,11 +185,111 @@ position = Vector2( 1276.33, 229.066 )
 [node name="blanc3" parent="LD/arbres/haut" instance=ExtResource( 2 )]
 position = Vector2( -1766.18, 413.6 )
 
+[node name="sapin turquoise4" parent="LD/arbres/haut" instance=ExtResource( 4 )]
+position = Vector2( 1564.88, 54.9443 )
+
+[node name="sapin petit7" parent="LD/arbres/haut" instance=ExtResource( 26 )]
+position = Vector2( 1421.04, 192.789 )
+
+[node name="buisson bleu" parent="LD/arbres/haut" instance=ExtResource( 28 )]
+position = Vector2( 1534.91, 261.71 )
+
+[node name="buisson vert2" parent="LD/arbres/haut" instance=ExtResource( 14 )]
+position = Vector2( 1624.81, 144.842 )
+
+[node name="sapin bleu6" parent="LD/arbres/haut" instance=ExtResource( 20 )]
+position = Vector2( 1792.62, 69.9272 )
+
+[node name="ovale" parent="LD/arbres/haut" instance=ExtResource( 9 )]
+position = Vector2( 1900.5, 414.538 )
+rotation = 0.0735265
+scale = Vector2( 1, 1 )
+
+[node name="fin 4" parent="LD/arbres/haut" instance=ExtResource( 13 )]
+position = Vector2( 1765.65, 306.66 )
+
+[node name="fin 5" parent="LD/arbres/haut" instance=ExtResource( 7 )]
+position = Vector2( 1951.44, 141.846 )
+
+[node name="fin 8" parent="LD/arbres/haut" instance=ExtResource( 13 )]
+position = Vector2( 2152.75, 23.5908 )
+
+[node name="fin1" parent="LD/arbres/haut" instance=ExtResource( 25 )]
+position = Vector2( 2092.28, 348.612 )
+
+[node name="sapin petit11" parent="LD/arbres/haut" instance=ExtResource( 26 )]
+position = Vector2( 2307.47, 3.40918 )
+
+[node name="sapin petit10" parent="LD/arbres/haut" instance=ExtResource( 26 )]
+position = Vector2( 2176.51, 740.207 )
+
+[node name="sapin petit8" parent="LD/arbres/haut" instance=ExtResource( 26 )]
+position = Vector2( 2218.96, 281.971 )
+
+[node name="fin4" parent="LD/arbres/haut" instance=ExtResource( 25 )]
+position = Vector2( 2379.82, 441.754 )
+
+[node name="ovale2" parent="LD/arbres/haut" instance=ExtResource( 9 )]
+position = Vector2( 2243.23, 517.909 )
+
+[node name="rond" parent="LD/arbres/haut" instance=ExtResource( 24 )]
+position = Vector2( 2048.26, 958.932 )
+
+[node name="fin3" parent="LD/arbres/haut" instance=ExtResource( 25 )]
+position = Vector2( 2378.56, 821.025 )
+
+[node name="fin 7" parent="LD/arbres/haut" instance=ExtResource( 7 )]
+position = Vector2( 2324.68, 1063.48 )
+
+[node name="jaune" parent="LD/arbres/haut" instance=ExtResource( 16 )]
+position = Vector2( 2365.16, 1186.59 )
+
+[node name="bouleau orange" parent="LD/arbres/haut" instance=ExtResource( 17 )]
+position = Vector2( 2160.13, 1246.33 )
+
+[node name="fin 6" parent="LD/arbres/haut" instance=ExtResource( 7 )]
+position = Vector2( 2252.73, 1545.05 )
+
+[node name="fin2" parent="LD/arbres/haut" instance=ExtResource( 25 )]
+position = Vector2( 2409.7, 1697.27 )
+
+[node name="jaune2" parent="LD/arbres/haut" instance=ExtResource( 16 )]
+position = Vector2( 2119.54, 1507 )
+
+[node name="sapin petit9" parent="LD/arbres/haut" instance=ExtResource( 26 )]
+position = Vector2( 2019.18, 541.218 )
+rotation = 0.0237131
+scale = Vector2( 0.9, 0.9 )
+
+[node name="sapin bleu7" parent="LD/arbres/haut" instance=ExtResource( 20 )]
+position = Vector2( -969.586, -20.9329 )
+
 [node name="haut gauche" type="StaticBody2D" parent="LD/arbres"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LD/arbres/haut gauche"]
 visible = false
 polygon = PoolVector2Array( -1246.69, -2477.03, -1366.56, -2117.43, -1624.27, -1841.74, -2679.08, -2087.47, -3242.44, -1841.74, -3907.69, -1835.75, -3961.63, -2830.63, -2643.12, -3124.29, -2283.52, -3070.36, -2295.51, -2902.55, -2289.52, -2764.7, -1917.94, -2626.86, -1408.51, -2620.86 )
+
+[node name="sapin bleu7" parent="LD/arbres/haut gauche" instance=ExtResource( 20 )]
+position = Vector2( -3258.27, -2251.82 )
+
+[node name="sapin petit11" parent="LD/arbres/haut gauche" instance=ExtResource( 26 )]
+position = Vector2( -2730.44, -2617.81 )
+
+[node name="sapin bleu6" parent="LD/arbres/haut gauche" instance=ExtResource( 20 )]
+position = Vector2( -2842.96, -2368.86 )
+
+[node name="sapin turquoise7" parent="LD/arbres/haut gauche" instance=ExtResource( 4 )]
+position = Vector2( -3050.61, -2300.9 )
+
+[node name="sapin petit7" parent="LD/arbres/haut gauche" instance=ExtResource( 26 )]
+position = Vector2( -2852.2, -2050.19 )
+
+[node name="rond" parent="LD/arbres/haut gauche" instance=ExtResource( 24 )]
+position = Vector2( -3058.16, -1949.78 )
+
+[node name="sapin petit10" parent="LD/arbres/haut gauche" instance=ExtResource( 26 )]
+position = Vector2( -3250.71, -1836.51 )
 
 [node name="sapin petit5" parent="LD/arbres/haut gauche" instance=ExtResource( 26 )]
 position = Vector2( -2186.09, -2606.14 )
@@ -234,9 +347,6 @@ scale = Vector2( 1.2, 1.2 )
 [node name="sapin turquoise6" parent="LD/arbres/haut gauche" instance=ExtResource( 4 )]
 position = Vector2( -2652.19, -2104.16 )
 scale = Vector2( 1.2, 1.2 )
-
-[node name="sapin petit7" parent="LD/arbres/haut gauche" instance=ExtResource( 26 )]
-position = Vector2( -2852.2, -2050.19 )
 
 [node name="sapin petit8" parent="LD/arbres/haut gauche" instance=ExtResource( 26 )]
 position = Vector2( -2350.43, -2467.91 )
@@ -348,11 +458,76 @@ scale = Vector2( 1, 1 )
 [node name="buissons v fonce" parent="LD/arbres/groupe milieu haut" instance=ExtResource( 11 )]
 position = Vector2( -1100.64, -1830.92 )
 
+[node name="milieu gauche2" type="Node2D" parent="LD/arbres"]
+position = Vector2( -3658.87, -1402.42 )
+
+[node name="ovale3" parent="LD/arbres/milieu gauche2" instance=ExtResource( 9 )]
+position = Vector2( 186.34, -886.823 )
+
+[node name="turquoise" parent="LD/arbres/milieu gauche2" instance=ExtResource( 8 )]
+position = Vector2( 222.299, -608.137 )
+
+[node name="sapin petit2" parent="LD/arbres/milieu gauche2" instance=ExtResource( 26 )]
+position = Vector2( 34.8557, -617.929 )
+
+[node name="ovale2" parent="LD/arbres/milieu gauche2" instance=ExtResource( 9 )]
+position = Vector2( 141.39, -317.466 )
+
+[node name="fin 2" parent="LD/arbres/milieu gauche2" instance=ExtResource( 7 )]
+position = Vector2( 200.624, 89.6317 )
+
+[node name="fin 5" parent="LD/arbres/milieu gauche2" instance=ExtResource( 7 )]
+position = Vector2( 27.7788, 42.178 )
+
+[node name="fin1" parent="LD/arbres/milieu gauche2" instance=ExtResource( 25 )]
+position = Vector2( 314.788, -214.805 )
+
+[node name="bouleau orange" parent="LD/arbres/milieu gauche2" instance=ExtResource( 17 )]
+position = Vector2( 67.4326, 379.798 )
+
+[node name="bouleau orange2" parent="LD/arbres/milieu gauche2" instance=ExtResource( 17 )]
+position = Vector2( 467.006, 893.536 )
+
+[node name="blanc" parent="LD/arbres/milieu gauche2" instance=ExtResource( 2 )]
+position = Vector2( 286.247, 327.473 )
+
+[node name="buisson orange" parent="LD/arbres/milieu gauche2" instance=ExtResource( 21 )]
+position = Vector2( 367.755, 429.938 )
+
+[node name="jaune2" parent="LD/arbres/milieu gauche2" instance=ExtResource( 16 )]
+position = Vector2( 177.482, 501.291 )
+scale = Vector2( 1.1, 1.1 )
+
+[node name="jaune" parent="LD/arbres/milieu gauche2" instance=ExtResource( 16 )]
+position = Vector2( 662.036, -76.8573 )
+
+[node name="ovale" parent="LD/arbres/milieu gauche2" instance=ExtResource( 9 )]
+position = Vector2( 304.912, 821.913 )
+
+[node name="fin 3" parent="LD/arbres/milieu gauche2" instance=ExtResource( 7 )]
+position = Vector2( 646.526, 1013.7 )
+
+[node name="fin2" parent="LD/arbres/milieu gauche2" instance=ExtResource( 25 )]
+position = Vector2( 811.34, 950.767 )
+
+[node name="sapin petit" parent="LD/arbres/milieu gauche2" instance=ExtResource( 26 )]
+position = Vector2( 522.512, 1083.34 )
+
+[node name="fin 4" parent="LD/arbres/milieu gauche2" instance=ExtResource( 7 )]
+position = Vector2( 782.654, 1216.98 )
+
 [node name="milieu bas droite" type="StaticBody2D" parent="LD/arbres"]
 position = Vector2( 1007.45, -685.213 )
 
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LD/arbres/milieu bas droite"]
+visible = false
+polygon = PoolVector2Array( -397.605, 220.72, -69.3401, -185.042, 208.306, -219.748, 447.693, -826.716, 852.15, -833.39, 833.011, -209.069, 846.36, 928.215, 532.755, 988.549, 591.385, 852.188, 571.227, 474.211, 424.966, 469.439, 287.122, 405.011, 78.8569, 303.127, -69.4755, 303.127, -201.327, 283.648, -387.117, 267.167 )
+
 [node name="turquoise2" parent="LD/arbres/milieu bas droite" instance=ExtResource( 8 )]
 position = Vector2( 654.173, -602.651 )
+
+[node name="fin 7" parent="LD/arbres/milieu bas droite" instance=ExtResource( 13 )]
+position = Vector2( 764.836, 667.372 )
 
 [node name="buisson blanc" parent="LD/arbres/milieu bas droite" instance=ExtResource( 15 )]
 position = Vector2( 9.82654, -146.858 )
@@ -417,70 +592,8 @@ position = Vector2( 541.854, 1147.74 )
 [node name="fin 4" parent="LD/arbres/milieu bas droite" instance=ExtResource( 13 )]
 position = Vector2( 436.14, 1404.48 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LD/arbres/milieu bas droite"]
-visible = false
-polygon = PoolVector2Array( -408.389, 242.107, -69.3401, -185.042, 208.306, -219.748, 833.011, -209.069, 846.36, 928.215, 532.755, 988.549, 591.385, 852.188, 571.227, 474.211, 404.917, 418.775, 52.139, 287.743, -250.242, 272.624 )
-
-[node name="bas droite2" type="StaticBody2D" parent="LD/arbres"]
-position = Vector2( 1390.61, 989.621 )
-
-[node name="ovale" parent="LD/arbres/bas droite2" instance=ExtResource( 9 )]
-position = Vector2( -87.6812, -132.936 )
-
-[node name="ovale2" parent="LD/arbres/bas droite2" instance=ExtResource( 9 )]
-position = Vector2( -307.684, -97.0175 )
-
-[node name="buisson fougere" parent="LD/arbres/bas droite2" instance=ExtResource( 10 )]
-position = Vector2( -193.208, 261.366 )
-
-[node name="fin1" parent="LD/arbres/bas droite2" instance=ExtResource( 25 )]
-position = Vector2( -276.428, 180.005 )
-
-[node name="ovale3" parent="LD/arbres/bas droite2" instance=ExtResource( 9 )]
-position = Vector2( 485.876, 397.261 )
-
-[node name="fin 3" parent="LD/arbres/bas droite2" instance=ExtResource( 13 )]
-position = Vector2( -137.999, 183.752 )
-
-[node name="bouleau orange4" parent="LD/arbres/bas droite2" instance=ExtResource( 17 )]
-position = Vector2( 133.255, -183.458 )
-
-[node name="sapin petit" parent="LD/arbres/bas droite2" instance=ExtResource( 26 )]
-position = Vector2( 40.0221, -109.296 )
-
-[node name="fin 2" parent="LD/arbres/bas droite2" instance=ExtResource( 7 )]
-position = Vector2( 18.0781, 211.107 )
-
-[node name="jaune" parent="LD/arbres/bas droite2" instance=ExtResource( 16 )]
-position = Vector2( -330.133, 298.089 )
-
-[node name="sapin petit3" parent="LD/arbres/bas droite2" instance=ExtResource( 26 )]
-position = Vector2( 330.391, 46.3759 )
-
-[node name="bouleau orange" parent="LD/arbres/bas droite2" instance=ExtResource( 17 )]
-position = Vector2( -91.9675, 461.779 )
-
-[node name="bouleau orange2" parent="LD/arbres/bas droite2" instance=ExtResource( 17 )]
-position = Vector2( 86.2234, 524.004 )
-
-[node name="bouleau orange3" parent="LD/arbres/bas droite2" instance=ExtResource( 17 )]
-position = Vector2( 281.385, 439.151 )
-
-[node name="buisson orange" parent="LD/arbres/bas droite2" instance=ExtResource( 21 )]
-position = Vector2( -256.016, 402.382 )
-
-[node name="fin 4" parent="LD/arbres/bas droite2" instance=ExtResource( 7 )]
-position = Vector2( 177.838, 94.4846 )
-
-[node name="sapin petit2" parent="LD/arbres/bas droite2" instance=ExtResource( 26 )]
-position = Vector2( 323.356, -629.888 )
-
-[node name="fin 5" parent="LD/arbres/bas droite2" instance=ExtResource( 7 )]
-position = Vector2( 304.668, -280.16 )
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LD/arbres/bas droite2"]
-visible = false
-polygon = PoolVector2Array( -366.325, -234.014, -408.751, 306.215, -114.595, 492.891, 86.2234, 538.146, 329.468, 436.323, 615.139, 441.98, 666.051, -287.755, 714.134, -811.014, 151.277, -692.22, -7.11475, -434.833 )
+[node name="turquoise3" parent="LD/arbres/milieu bas droite" instance=ExtResource( 8 )]
+position = Vector2( 767.552, -257.11 )
 
 [node name="groupe milieu" type="StaticBody2D" parent="LD/arbres"]
 position = Vector2( -599.36, -1408.02 )
@@ -572,13 +685,6 @@ offset = Vector2( 24.1896, -213.949 )
 [node name="fin 2" parent="LD/arbres/groupe milieu bas" instance=ExtResource( 7 )]
 position = Vector2( -227.384, 224.004 )
 
-[node name="jaune" parent="LD/arbres" instance=ExtResource( 16 )]
-position = Vector2( -1469.47, -481.691 )
-
-[node name="fin 3" parent="LD/arbres" instance=ExtResource( 13 )]
-position = Vector2( -1358.03, -609.097 )
-scale = Vector2( -1, 1 )
-
 [node name="milieu gauche" type="StaticBody2D" parent="LD/arbres"]
 position = Vector2( -2536, -312 )
 
@@ -586,23 +692,41 @@ position = Vector2( -2536, -312 )
 visible = false
 polygon = PoolVector2Array( -708.192, 934.949, -775.54, 679.027, -595.946, 342.289, -254.717, 288.411, 55.082, 387.187, 104.471, 499.433, 311.004, 472.494, 436.719, 337.799, 670.191, 324.329, 962.031, 144.735, 926.113, -7.91943, 1222.44, -254.861, 1244.89, -385.067, 984.481, -326.699, 257.125, -214.453, -591.456, -416.496, -865.337, -982.217, -676.763, -1597.33, -1399.63, -1570.39, -1426.57, 984.337 )
 
+[node name="jaune2" parent="LD/arbres/milieu gauche" instance=ExtResource( 16 )]
+position = Vector2( 1066.53, -169.691 )
+
+[node name="fin 4" parent="LD/arbres/milieu gauche" instance=ExtResource( 13 )]
+position = Vector2( 1177.97, -297.097 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
 [node name="buisson vert2" parent="LD/arbres/milieu gauche" instance=ExtResource( 14 )]
 position = Vector2( 910.029, -264.773 )
 
 [node name="buisson vert3" parent="LD/arbres/milieu gauche" instance=ExtResource( 14 )]
 position = Vector2( 158.45, 501.077 )
 
+[node name="fin 6" parent="LD/arbres/milieu gauche" instance=ExtResource( 7 )]
+position = Vector2( -162.708, 126.444 )
+
+[node name="sapin petit2" parent="LD/arbres/milieu gauche" instance=ExtResource( 26 )]
+position = Vector2( 167.956, 170.796 )
+
+[node name="fin 7" parent="LD/arbres/milieu gauche" instance=ExtResource( 7 )]
+position = Vector2( 269.403, 53.3301 )
+
+[node name="fin3" parent="LD/arbres/milieu gauche" instance=ExtResource( 25 )]
+position = Vector2( 111.892, -45.4481 )
+
+[node name="ovale3" parent="LD/arbres/milieu gauche" instance=ExtResource( 9 )]
+position = Vector2( 31.8018, 72.0178 )
+
 [node name="rond" parent="LD/arbres/milieu gauche" instance=ExtResource( 24 )]
 position = Vector2( -412.37, 277.505 )
 
-[node name="blanc2" parent="LD/arbres/milieu gauche" instance=ExtResource( 2 )]
-position = Vector2( -767.623, 459.949 )
-rotation = 3.14159
-scale = Vector2( 1, -1 )
-
 [node name="saule" parent="LD/arbres/milieu gauche" instance=ExtResource( 27 )]
 position = Vector2( -69.8784, 344.101 )
-rotation = 3.14159
+rotation = -3.14159
 scale = Vector2( 1.3, -1.3 )
 
 [node name="sapin petit" parent="LD/arbres/milieu gauche" instance=ExtResource( 26 )]
@@ -632,6 +756,78 @@ position = Vector2( 633.946, 366.098 )
 
 [node name="ovale" parent="LD/arbres/milieu gauche" instance=ExtResource( 9 )]
 position = Vector2( 326.505, 416.723 )
+
+[node name="fin2" parent="LD/arbres/milieu gauche" instance=ExtResource( 25 )]
+position = Vector2( -748.021, 255.439 )
+
+[node name="fin 5" parent="LD/arbres/milieu gauche" instance=ExtResource( 7 )]
+position = Vector2( -629.361, 374.099 )
+
+[node name="blanc2" parent="LD/arbres/milieu gauche" instance=ExtResource( 2 )]
+position = Vector2( -767.623, 459.949 )
+rotation = -3.14159
+scale = Vector2( 1, -1 )
+
+[node name="bas droite2" type="StaticBody2D" parent="LD/arbres"]
+position = Vector2( 1390.61, 989.621 )
+
+[node name="ovale" parent="LD/arbres/bas droite2" instance=ExtResource( 9 )]
+position = Vector2( -87.6812, -132.936 )
+
+[node name="ovale2" parent="LD/arbres/bas droite2" instance=ExtResource( 9 )]
+position = Vector2( -307.684, -97.0175 )
+
+[node name="buisson fougere" parent="LD/arbres/bas droite2" instance=ExtResource( 10 )]
+position = Vector2( -193.208, 261.366 )
+
+[node name="fin1" parent="LD/arbres/bas droite2" instance=ExtResource( 25 )]
+position = Vector2( -276.428, 180.005 )
+
+[node name="ovale3" parent="LD/arbres/bas droite2" instance=ExtResource( 9 )]
+position = Vector2( 485.876, 397.261 )
+
+[node name="fin 3" parent="LD/arbres/bas droite2" instance=ExtResource( 13 )]
+position = Vector2( -137.999, 183.752 )
+
+[node name="bouleau orange4" parent="LD/arbres/bas droite2" instance=ExtResource( 17 )]
+position = Vector2( 133.255, -183.458 )
+
+[node name="sapin petit" parent="LD/arbres/bas droite2" instance=ExtResource( 26 )]
+position = Vector2( 40.0221, -109.296 )
+
+[node name="fin 2" parent="LD/arbres/bas droite2" instance=ExtResource( 7 )]
+position = Vector2( 18.0781, 211.107 )
+
+[node name="jaune" parent="LD/arbres/bas droite2" instance=ExtResource( 16 )]
+position = Vector2( -330.133, 298.089 )
+
+[node name="sapin petit3" parent="LD/arbres/bas droite2" instance=ExtResource( 26 )]
+position = Vector2( 330.391, 46.3759 )
+
+[node name="bouleau orange" parent="LD/arbres/bas droite2" instance=ExtResource( 17 )]
+position = Vector2( -91.9675, 461.779 )
+
+[node name="bouleau orange2" parent="LD/arbres/bas droite2" instance=ExtResource( 17 )]
+position = Vector2( 86.2234, 524.004 )
+
+[node name="bouleau orange3" parent="LD/arbres/bas droite2" instance=ExtResource( 17 )]
+position = Vector2( 281.385, 439.151 )
+
+[node name="buisson orange" parent="LD/arbres/bas droite2" instance=ExtResource( 21 )]
+position = Vector2( -256.016, 402.382 )
+
+[node name="fin 4" parent="LD/arbres/bas droite2" instance=ExtResource( 7 )]
+position = Vector2( 177.838, 94.4846 )
+
+[node name="sapin petit2" parent="LD/arbres/bas droite2" instance=ExtResource( 26 )]
+position = Vector2( 323.356, -629.888 )
+
+[node name="fin 5" parent="LD/arbres/bas droite2" instance=ExtResource( 7 )]
+position = Vector2( 304.668, -280.16 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LD/arbres/bas droite2"]
+visible = false
+polygon = PoolVector2Array( -366.325, -234.014, -408.751, 306.215, -114.595, 492.891, 86.2234, 538.146, 329.468, 436.323, 615.139, 441.98, 666.051, -287.755, 714.134, -811.014, 151.277, -692.22, -7.11475, -434.833 )
 
 [node name="bas gauche" type="StaticBody2D" parent="LD/arbres"]
 position = Vector2( -1549, 633.068 )
