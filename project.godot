@@ -15,8 +15,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Histoire d'une ZAD"
-run/main_scene="res://DGodot/scenes/Logo.tscn"
+config/name="Ggj 2021- Zad"
+run/main_scene="res://DGodot/scenes/ScenePrincipale_Zad.tscn"
 config/icon="res://icon.png"
 
 [rendering]

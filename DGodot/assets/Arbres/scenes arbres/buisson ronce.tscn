@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://DGodot/assets/Buissons/buissons7.png" type="Texture" id=1]
+[ext_resource path="res://DGodot/scripts/z_index.gd" type="Script" id=2]
+
+[node name="buissons ronce" type="Sprite"]
+position = Vector2( -0.903015, 0.14978 )
+texture = ExtResource( 1 )
+offset = Vector2( -2.51978, -55.4365 )
+script = ExtResource( 2 )
