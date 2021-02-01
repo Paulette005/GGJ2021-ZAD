@@ -10,7 +10,6 @@ extends Sprite
 func _ready():
 	z_as_relative = false
 	z_index = global_position.y / 2
-	print(z_index)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
