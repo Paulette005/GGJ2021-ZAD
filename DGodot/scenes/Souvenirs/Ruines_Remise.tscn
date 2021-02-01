@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://DGodot/assets/ZoneSouvenirs/remise/remise2.png" type="Texture" id=1]
+[ext_resource path="res://DGodot/scripts/IDSouvenirs.gd" type="Script" id=2]
+[ext_resource path="res://DGodot/assets/ZoneSouvenirs/remise/remise1.png" type="Texture" id=3]
+[ext_resource path="res://DGodot/scripts/z_index.gd" type="Script" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 66.9972
+
+[node name="Ruines_Remise" type="Node2D"]
+position = Vector2( 165.482, 458.611 )
+script = ExtResource( 2 )
+IDSouvenirs = 4
+
+[node name="Sprite2" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+script = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 668.385, -306.738 )
+texture = ExtResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 0.75, 0.25 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( -139.443, 52.0986, -138.516, 10.3954, -135.033, -13.1023, -61.6425, -4.59784, -27.6246, -0.503113, 25.2921, -0.503113, 65.2946, -0.503113, 116.636, 4.22159, 119.471, 32.8848, 126.086, 39.4994, 123.704, 53.2069, 82.9334, 58.3982, 60.2549, 65.3278, -18.8052, 71.3124, -75.488, 63.3152 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 493.767, -136.116, 493.767, -225.55, 489.388, -346.938, 493.096, -414.744, 552.426, -452.355, 710.816, -438.582, 712.935, -312.506, 744.189, -241.522, 695.996, -182.168, 664.518, -142.611, 638.518, -129.611, 581.867, -126.772 )

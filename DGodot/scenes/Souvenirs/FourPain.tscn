@@ -1,29 +1,44 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://DGodot/assets/ZoneSouvenirs/cuisine/cuisine1.png" type="Texture" id=1]
 [ext_resource path="res://DGodot/scripts/IDSouvenirs.gd" type="Script" id=2]
 [ext_resource path="res://DGodot/assets/ZoneSouvenirs/barricades/barricades4.png" type="Texture" id=3]
 [ext_resource path="res://DGodot/assets/ZoneSouvenirs/cuisine/cuisine2.png" type="Texture" id=4]
+[ext_resource path="res://DGodot/scripts/z_index.gd" type="Script" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 262.831
 
-[node name="FourPain" type="Sprite"]
+[node name="FourPain" type="Node2D"]
 position = Vector2( 208.778, 381.637 )
-texture = ExtResource( 4 )
 script = ExtResource( 2 )
 IDSouvenirs = 3
+
+[node name="Sprite3" type="Sprite" parent="."]
+texture = ExtResource( 4 )
+script = ExtResource( 5 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 365.922, -208.778 )
+texture = ExtResource( 3 )
+script = ExtResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 452.839, -157.605 )
+texture = ExtResource( 1 )
+script = ExtResource( 5 )
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 0.75, 0.25 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0, -0.445465 )
 shape = SubResource( 1 )
 
-[node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( 365.922, -208.778 )
-texture = ExtResource( 3 )
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 452.839, -157.605 )
-texture = ExtResource( 1 )
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 77.2474, 44.2533, -14.3979, 62.7512, -100.932, 49.5987, -97.8142, 17.5263, -92.9142, -19.0005, -13.0631, -15.3369, 74.1293, -14.9915, 80.811, 13.0719 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 516.295, -104.028, 461.875, -110.935, 434.524, -109.746, 397.105, -117.271, 381.213, -143.228, 362.673, -150.115, 325.591, -145.347, 262.553, -142.698, 250.369, -162.828, 244.542, -225.337, 310.846, -229.262, 395.874, -231.045, 426.199, -225.099, 447.959, -206.796, 482.092, -197.153, 519.473, -185.607, 518.414, -130.515 )

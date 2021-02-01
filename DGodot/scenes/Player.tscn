@@ -37,7 +37,7 @@ offset = Vector2( 0.714768, -76.2058 )
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2( 2.56079, -21.9952 )
 scale = Vector2( 1.13946, 3.10827 )
-polygon = PoolVector2Array( 6.65417, 2.19011, 23.6439, 8.56126, -1.12241, 9.87706, -23.7858, 8.32529, -9.1557, 1.01027 )
+polygon = PoolVector2Array( 11.2204, -1.32135, 18.2571, 8.4238, -1.28938, 8.71042, -21.6178, 7.70724, -14.1901, -1.03473 )
 
 [node name="Marche" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )

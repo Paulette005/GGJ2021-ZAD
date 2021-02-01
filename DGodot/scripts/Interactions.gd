@@ -1,4 +1,4 @@
-extends Sprite
+extends Node2D
 
 var playerZone = false
 var IDSouvenirs
