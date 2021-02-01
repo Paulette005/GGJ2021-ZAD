@@ -25,14 +25,17 @@ animations = [ {
 } ]
 
 [node name="Player" type="KinematicBody2D"]
+position = Vector2( 0, 0.793671 )
+z_as_relative = false
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 1.65178, -1.88775 )
+position = Vector2( -1.44409, -1.87714 )
 frames = SubResource( 1 )
 animation = "idle"
+offset = Vector2( 0.714768, -76.2058 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2( 4.9419, 54.2 )
+position = Vector2( 2.56079, -21.9952 )
 scale = Vector2( 1.13946, 3.10827 )
 polygon = PoolVector2Array( 6.65417, 2.19011, 23.6439, 8.56126, -1.12241, 9.87706, -23.7858, 8.32529, -9.1557, 1.01027 )
 

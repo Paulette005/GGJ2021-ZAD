@@ -10,7 +10,7 @@ func _physics_process(delta):
 	mouvement = Vector2 (0,0)
 	
 	# Lien avec le script Zindex
-	#z_index = global_position.y
+	z_index = global_position.y / 2
 	
 	if Input.is_action_pressed("ui_up"):
 		mouvement.y -= 1
