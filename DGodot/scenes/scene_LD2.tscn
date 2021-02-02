@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://DGodot/scenes/Souvenirs/Barricades.tscn" type="PackedScene" id=1]
 [ext_resource path="res://DGodot/assets/Arbres/scenes arbres/blanc.tscn" type="PackedScene" id=2]
@@ -40,6 +40,21 @@
 [ext_resource path="res://DGodot/assets/Arbres/scenes arbres/groupe-d-arbres.tscn" type="PackedScene" id=38]
 [ext_resource path="res://DGodot/audio/Ambiance/AmbianceForetV1.ogg" type="AudioStream" id=39]
 [ext_resource path="res://DGodot/scenes/Souvenirs/CoinFeu.tscn" type="PackedScene" id=40]
+[ext_resource path="res://DGodot/assets/fond/fond-bleu.jpg" type="Texture" id=42]
+[ext_resource path="res://DGodot/assets/fond/mix_textures.shader" type="Shader" id=43]
+[ext_resource path="res://DGodot/assets/fond/terrainShader.gd" type="Script" id=45]
+[ext_resource path="res://DGodot/assets/fond/texturre_mix.jpg" type="Texture" id=46]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 43 )
+shader_param/rect_size = Vector2( 5904.13, 5669.2 )
+shader_param/texture_fond_size = Vector2( 1183, 630 )
+shader_param/texture1_size = Vector2( 300, 300 )
+shader_param/texture2_size = Vector2( 300, 300 )
+shader_param/texture3_size = Vector2( 795, 784 )
+shader_param/textureFond = ExtResource( 30 )
+shader_param/texture3 = ExtResource( 42 )
+shader_param/mixTexture = ExtResource( 46 )
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 233.769, -210.224 )
@@ -97,6 +112,10 @@ script = ExtResource( 35 )
 [node name="LD" type="Node2D" parent="."]
 
 [node name="arbres" type="Node2D" parent="LD"]
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
 
 [node name="blanc" parent="LD/arbres" instance=ExtResource( 2 )]
 position = Vector2( 944.569, 184.188 )
@@ -848,6 +867,10 @@ position = Vector2( -1207.06, 732.714 )
 [node name="bas droite2" type="StaticBody2D" parent="LD/arbres"]
 position = Vector2( 1390.61, 989.621 )
 
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LD/arbres/bas droite2"]
+visible = false
+polygon = PoolVector2Array( -366.325, -234.014, -408.751, 306.215, -114.595, 492.891, 86.2234, 538.146, 329.468, 436.323, 615.139, 441.98, 666.051, -287.755, 714.134, -811.014, 151.277, -692.22, -7.11475, -434.833 )
+
 [node name="ovale" parent="LD/arbres/bas droite2" instance=ExtResource( 9 )]
 position = Vector2( -87.6812, -132.936 )
 
@@ -902,16 +925,12 @@ position = Vector2( 323.356, -629.888 )
 [node name="fin 5" parent="LD/arbres/bas droite2" instance=ExtResource( 7 )]
 position = Vector2( 304.668, -280.16 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LD/arbres/bas droite2"]
-visible = false
-polygon = PoolVector2Array( -366.325, -234.014, -408.751, 306.215, -114.595, 492.891, 86.2234, 538.146, 329.468, 436.323, 615.139, 441.98, 666.051, -287.755, 714.134, -811.014, 151.277, -692.22, -7.11475, -434.833 )
-
 [node name="bas gauche" type="StaticBody2D" parent="LD/arbres"]
 position = Vector2( -1549, 633.068 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LD/arbres/bas gauche"]
 visible = false
-polygon = PoolVector2Array( 205.029, 1088.7, 338.513, 885.8, 514.712, 613.493, 423.943, 90.2354, 568.105, -96.6423, 466.658, -395.646, 221.047, -555.827, -45.9209, -481.076, -318.228, -294.199, -873.522, -134.018, -1124.47, 15.4844, -1754.52, -37.9094, -2395.24, -27.2307, -2331.17, 506.705, -430.355, 618.832, -302.21, 1088.7 )
+polygon = PoolVector2Array( 183.292, 961.039, 338.513, 885.8, 514.712, 613.493, 341.684, 129.482, 372.796, -6.28299, 505.732, -40.2241, 529.62, -116.808, 477.561, -214.251, 432.177, -264.975, 425.503, -373.097, 219.937, -521.264, -45.9209, -481.076, -318.228, -294.199, -873.522, -134.018, -1124.47, 15.4844, -1754.52, -37.9094, -2395.24, -27.2307, -2331.17, 506.705, -430.355, 618.832, -300.369, 1224.08, 47.5271, 1274.99 )
 
 [node name="buisson blanc" parent="LD/arbres/bas gauche" instance=ExtResource( 15 )]
 position = Vector2( 486.628, -52.1445 )
@@ -1038,236 +1057,29 @@ position = Vector2( -472.19, 1193.83 )
 [node name="sapin petit5" parent="LD/arbres/bas gauche" instance=ExtResource( 26 )]
 position = Vector2( -53.1104, 1048.47 )
 
+[node name="fin 10" parent="LD/arbres/bas gauche" instance=ExtResource( 7 )]
+position = Vector2( -16.4971, 1331.69 )
+
 [node name="fond" type="Node2D" parent="LD"]
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
 }
 
-[node name="fond-herbe" type="Sprite" parent="LD/fond"]
-position = Vector2( 1420.72, 1410.11 )
-z_index = -3000
-texture = ExtResource( 30 )
+[node name="texturre_mix" type="Sprite" parent="LD/fond"]
+material = SubResource( 1 )
+position = Vector2( -937.578, -963.604 )
+scale = Vector2( 1.96804, 1.88973 )
+z_index = -2990
+texture = ExtResource( 46 )
+script = ExtResource( 45 )
 
-[node name="fond-herbe2" type="Sprite" parent="LD/fond"]
-position = Vector2( 239.678, 1410.11 )
-z_index = -3000
-texture = ExtResource( 30 )
+[node name="collision bord route" type="StaticBody2D" parent="LD/fond"]
+position = Vector2( 799.148, 1750.51 )
 
-[node name="fond-herbe3" type="Sprite" parent="LD/fond"]
-position = Vector2( 1420.72, 780.408 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe4" type="Sprite" parent="LD/fond"]
-position = Vector2( 239.678, 780.408 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe5" type="Sprite" parent="LD/fond"]
-position = Vector2( 1420.72, 152.083 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe6" type="Sprite" parent="LD/fond"]
-position = Vector2( 239.678, 152.083 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe7" type="Sprite" parent="LD/fond"]
-position = Vector2( 1420.72, -477.623 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe8" type="Sprite" parent="LD/fond"]
-position = Vector2( 239.678, -477.623 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe9" type="Sprite" parent="LD/fond"]
-position = Vector2( -942.623, 1410.11 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe10" type="Sprite" parent="LD/fond"]
-position = Vector2( -942.623, 780.408 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe11" type="Sprite" parent="LD/fond"]
-position = Vector2( -942.623, 152.083 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe12" type="Sprite" parent="LD/fond"]
-position = Vector2( -942.623, -477.623 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe13" type="Sprite" parent="LD/fond"]
-position = Vector2( 1420.72, -1107.05 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe14" type="Sprite" parent="LD/fond"]
-position = Vector2( 239.678, -1107.05 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe15" type="Sprite" parent="LD/fond"]
-position = Vector2( -942.623, -1107.05 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe16" type="Sprite" parent="LD/fond"]
-position = Vector2( -2124.99, 1410.11 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe17" type="Sprite" parent="LD/fond"]
-position = Vector2( -3306.03, 1410.11 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe18" type="Sprite" parent="LD/fond"]
-position = Vector2( -2124.99, 780.408 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe19" type="Sprite" parent="LD/fond"]
-position = Vector2( -3306.03, 780.408 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe20" type="Sprite" parent="LD/fond"]
-position = Vector2( -2124.99, 152.083 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe21" type="Sprite" parent="LD/fond"]
-position = Vector2( -3306.03, 152.083 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe22" type="Sprite" parent="LD/fond"]
-position = Vector2( -2124.99, -477.623 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe23" type="Sprite" parent="LD/fond"]
-position = Vector2( -3306.03, -477.623 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe28" type="Sprite" parent="LD/fond"]
-position = Vector2( -2124.99, -1107.05 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe29" type="Sprite" parent="LD/fond"]
-position = Vector2( -3306.03, -1107.05 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe31" type="Sprite" parent="LD/fond"]
-position = Vector2( 1420.72, -1736.59 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe32" type="Sprite" parent="LD/fond"]
-position = Vector2( 239.678, -1736.59 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe33" type="Sprite" parent="LD/fond"]
-position = Vector2( -942.623, -1736.59 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe34" type="Sprite" parent="LD/fond"]
-position = Vector2( 1420.72, -2366.01 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe35" type="Sprite" parent="LD/fond"]
-position = Vector2( 239.678, -2366.01 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe36" type="Sprite" parent="LD/fond"]
-position = Vector2( -942.623, -2366.01 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe37" type="Sprite" parent="LD/fond"]
-position = Vector2( -2124.99, -1736.59 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe38" type="Sprite" parent="LD/fond"]
-position = Vector2( -3306.03, -1736.59 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe40" type="Sprite" parent="LD/fond"]
-position = Vector2( -2124.99, -2366.01 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe41" type="Sprite" parent="LD/fond"]
-position = Vector2( -3306.03, -2366.01 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe43" type="Sprite" parent="LD/fond"]
-position = Vector2( 1420.72, -2994.8 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe44" type="Sprite" parent="LD/fond"]
-position = Vector2( 239.678, -2994.8 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe45" type="Sprite" parent="LD/fond"]
-position = Vector2( -942.623, -2994.8 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe46" type="Sprite" parent="LD/fond"]
-position = Vector2( -2124.99, -2994.8 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe47" type="Sprite" parent="LD/fond"]
-position = Vector2( -3306.03, -2994.8 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe48" type="Sprite" parent="LD/fond"]
-position = Vector2( 1420.72, -3622.1 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe49" type="Sprite" parent="LD/fond"]
-position = Vector2( 239.678, -3622.1 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe50" type="Sprite" parent="LD/fond"]
-position = Vector2( -942.623, -3622.1 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe51" type="Sprite" parent="LD/fond"]
-position = Vector2( -2124.99, -3622.1 )
-z_index = -3000
-texture = ExtResource( 30 )
-
-[node name="fond-herbe52" type="Sprite" parent="LD/fond"]
-position = Vector2( -3306.03, -3622.1 )
-z_index = -3000
-texture = ExtResource( 30 )
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LD/fond/collision bord route"]
+visible = false
+polygon = PoolVector2Array( -2354.16, 103.232, 983.22, 110.833, 969.765, -439.114, 1584.25, -237.678, 1546.19, 428.278, -1954.83, 466.333, -2363.92, 238.005, -2491.1, 103.232 )
 
 [node name="LD 2" type="Sprite" parent="LD"]
 visible = false
@@ -1282,3 +1094,4 @@ __meta__ = {
 [node name="Ambiance" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 39 )
 autoplay = true
+[connection signal="item_rect_changed" from="LD/fond/texturre_mix" to="LD/fond/texturre_mix" method="calculate_size"]
