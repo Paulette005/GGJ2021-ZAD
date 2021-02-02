@@ -14,11 +14,11 @@ func on_body_entered(body):
 	if body.name == "Player":
 		playerZone = true
 		print("playerZone true")
-		print(IDSouvenirs)
 
 func on_body_exited(body):
 	if body.name == "Player":
 		playerZone = false
+		Dialogues.visible = false
 		print("playerZone false")
 
 func _input(event):
@@ -26,5 +26,6 @@ func _input(event):
 		parle()
 
 func parle():
+	BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[IDSouvenirs]
 	Dialogues.visible = true
-
+	print(BoiteDialogues.DialSouvenir)
