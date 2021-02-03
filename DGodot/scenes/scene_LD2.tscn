@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://DGodot/scenes/Souvenirs/Barricades.tscn" type="PackedScene" id=1]
 [ext_resource path="res://DGodot/assets/Arbres/scenes arbres/blanc.tscn" type="PackedScene" id=2]
@@ -40,19 +40,24 @@
 [ext_resource path="res://DGodot/assets/Arbres/scenes arbres/groupe-d-arbres.tscn" type="PackedScene" id=38]
 [ext_resource path="res://DGodot/audio/Ambiance/AmbianceForetV1.ogg" type="AudioStream" id=39]
 [ext_resource path="res://DGodot/scenes/Souvenirs/CoinFeu.tscn" type="PackedScene" id=40]
+[ext_resource path="res://DGodot/assets/fond/fond-vert-fonce.jpg" type="Texture" id=41]
 [ext_resource path="res://DGodot/assets/fond/fond-bleu.jpg" type="Texture" id=42]
 [ext_resource path="res://DGodot/assets/fond/mix_textures.shader" type="Shader" id=43]
+[ext_resource path="res://DGodot/assets/fond/fond-fleurs.jpg" type="Texture" id=44]
 [ext_resource path="res://DGodot/assets/fond/terrainShader.gd" type="Script" id=45]
-[ext_resource path="res://DGodot/assets/fond/texturre_mix.jpg" type="Texture" id=46]
+[ext_resource path="res://DGodot/assets/fond/texture_mix.jpg" type="Texture" id=46]
+[ext_resource path="res://DGodot/assets/fond/routes2.png" type="Texture" id=47]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 43 )
-shader_param/rect_size = Vector2( 5904.13, 5669.2 )
+shader_param/rect_size = Vector2( 5904.12, 5669.19 )
 shader_param/texture_fond_size = Vector2( 1183, 630 )
-shader_param/texture1_size = Vector2( 300, 300 )
-shader_param/texture2_size = Vector2( 300, 300 )
+shader_param/texture1_size = Vector2( 1058, 580 )
+shader_param/texture2_size = Vector2( 710, 716 )
 shader_param/texture3_size = Vector2( 795, 784 )
 shader_param/textureFond = ExtResource( 30 )
+shader_param/texture1 = ExtResource( 41 )
+shader_param/texture2 = ExtResource( 44 )
 shader_param/texture3 = ExtResource( 42 )
 shader_param/mixTexture = ExtResource( 46 )
 
@@ -71,7 +76,7 @@ zoom = Vector2( 1.5, 1.5 )
 limit_left = -3400
 limit_top = -3700
 limit_right = 2000
-limit_bottom = 1500
+limit_bottom = 1650
 limit_smoothed = true
 editor_draw_limits = true
 script = ExtResource( 33 )
@@ -1073,6 +1078,12 @@ scale = Vector2( 1.96804, 1.88973 )
 z_index = -2990
 texture = ExtResource( 46 )
 script = ExtResource( 45 )
+
+[node name="routes2" type="Sprite" parent="LD/fond"]
+position = Vector2( 661.128, 966.99 )
+z_index = -2900
+z_as_relative = false
+texture = ExtResource( 47 )
 
 [node name="collision bord route" type="StaticBody2D" parent="LD/fond"]
 position = Vector2( 799.148, 1750.51 )
