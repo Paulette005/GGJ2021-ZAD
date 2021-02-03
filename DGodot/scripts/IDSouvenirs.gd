@@ -1,4 +1,4 @@
 extends Node2D
 
 export var IDSouvenirs = 0
-var Narration = 0
+export var valeur = 1
