@@ -82,7 +82,7 @@ editor_draw_limits = true
 script = ExtResource( 33 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 403.033, 1671.09 )
+position = Vector2( 403.033, 1854.23 )
 script = ExtResource( 37 )
 
 [node name="Barricades" parent="." instance=ExtResource( 1 )]
@@ -110,7 +110,7 @@ position = Vector2( 317.192, -1426.22 )
 script = ExtResource( 35 )
 
 [node name="Route" parent="." instance=ExtResource( 23 )]
-position = Vector2( 401.887, 1678.34 )
+position = Vector2( 416.158, 1606.99 )
 scale = Vector2( 6.33936, 1 )
 script = ExtResource( 35 )
 

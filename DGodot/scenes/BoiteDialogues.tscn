@@ -46,8 +46,7 @@ custom_fonts/mono_font = ExtResource( 3 )
 custom_fonts/normal_font = ExtResource( 3 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_text = "Voici du texte pour faire un test."
-text = "Voici du texte pour faire un test.
-"
+text = "Voici du texte pour faire un test."
 __meta__ = {
 "_edit_use_anchors_": false
 }
