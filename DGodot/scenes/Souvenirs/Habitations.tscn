@@ -49,14 +49,15 @@ shape = SubResource( 1 )
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PoolVector2Array( -111.086, 53.9367, -111.544, 16.4362, -110.483, -3.36276, -52.2298, -3.04636, -2.3492, -4.79709, 23.1598, 17.1433, 50.4319, 36.0785, 61.1468, 57.1115, 25.4303, 58.6989, -23.7791, 61.8737, -73.9553, 57.6351 )
+position = Vector2( -0.943878, 0 )
+polygon = PoolVector2Array( -146.387, 86.2294, -145.443, 2.22464, -112.407, -13.8212, -53.8868, -16.6528, -3.86151, -12.8773, 26.3425, 17.3266, 61.2658, 41.8674, 76.3678, 76.7907, 30.118, 81.5101, -18.9635, 79.6223, -71.8205, 84.3417 )
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2( 53.3176, 62.3636 )
 polygon = PoolVector2Array( 571.143, -158.439, 592.71, -231.978, 664.834, -227.028, 680.744, -225.968, 698.422, -236.221, 798.478, -217.129, 811.913, -207.229, 834.768, -202.321, 853.632, -189.905, 846.914, -159.5, 827.116, -125.205, 798.478, -115.305, 744.03, -114.952, 723.171, -138.993, 698.422, -147.633, 655.72, -151.379, 602.256, -154.903 )
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PoolVector2Array( 316.375, 146.193, 394.286, 84.762, 365.819, 57.7924, 276.669, 122.969 )
+polygon = PoolVector2Array( 298.178, 174.01, 429.377, 74.903, 372.744, 39.0357, 235.883, 142.862 )
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2( -264.667, 58.9624 )
