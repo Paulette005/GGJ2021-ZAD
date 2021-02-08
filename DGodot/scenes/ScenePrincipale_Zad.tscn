@@ -65,6 +65,7 @@ script = ExtResource( 6 )
 
 [node name="CoinFeu" parent="." instance=ExtResource( 13 )]
 position = Vector2( -984.867, -2074.43 )
+IDSouvenirs = 0
 
 [node name="Ambiance" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 15 )

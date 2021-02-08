@@ -1,19 +1,15 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://DGodot/assets/ZoneSouvenirs/barricades/barricades5.png" type="Texture" id=1]
 [ext_resource path="res://DGodot/scripts/IDSouvenirs.gd" type="Script" id=2]
 [ext_resource path="res://DGodot/assets/ZoneSouvenirs/habitation/habitation2.png" type="Texture" id=3]
 [ext_resource path="res://DGodot/assets/ZoneSouvenirs/habitation/habitation3.png" type="Texture" id=4]
 [ext_resource path="res://DGodot/assets/ZoneSouvenirs/habitation/habitation1.png" type="Texture" id=5]
 [ext_resource path="res://DGodot/scripts/z_index.gd" type="Script" id=7]
 
-[sub_resource type="CircleShape2D" id=1]
-radius = 66.9972
-
 [node name="Habitations" type="Node2D"]
 position = Vector2( 143.961, 344.748 )
 script = ExtResource( 2 )
-IDSouvenirs = 5
+IDSouvenirs = 8
 
 [node name="Sprite2" type="Sprite" parent="."]
 position = Vector2( 350.816, 90.3797 )
@@ -24,27 +20,16 @@ script = ExtResource( 7 )
 texture = ExtResource( 5 )
 script = ExtResource( 7 )
 
-[node name="Sprite5" type="Sprite" parent="."]
-position = Vector2( 731.539, -162.946 )
-texture = ExtResource( 1 )
-script = ExtResource( 7 )
-
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 808.059, -79.9574 )
-texture = ExtResource( 3 )
-script = ExtResource( 7 )
-
-[node name="Sprite4" type="Sprite" parent="."]
-position = Vector2( -939.949, -135.357 )
 texture = ExtResource( 3 )
 script = ExtResource( 7 )
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 0.75, 0.25 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( -21.4057, -4.75681 )
-shape = SubResource( 1 )
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( -236.873, -110.505, -79.3623, -151.885, 171.588, -66.4548, 398.51, -54.4413, 542.673, 16.3052, 507.967, 183.16, 397.175, 232.549, 198.284, 231.214, -78.0275, 180.491, -216.851, 131.101, -274.249, 26.9839 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -54,11 +39,7 @@ polygon = PoolVector2Array( -146.387, 86.2294, -145.443, 2.22464, -112.407, -13.
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2( 53.3176, 62.3636 )
-polygon = PoolVector2Array( 571.143, -158.439, 592.71, -231.978, 664.834, -227.028, 680.744, -225.968, 698.422, -236.221, 798.478, -217.129, 811.913, -207.229, 834.768, -202.321, 853.632, -189.905, 846.914, -159.5, 827.116, -125.205, 798.478, -115.305, 744.03, -114.952, 723.171, -138.993, 698.422, -147.633, 655.72, -151.379, 602.256, -154.903 )
+polygon = PoolVector2Array( 760.529, -158.463, 801.909, -169.809, 817.259, -140.442, 827.116, -125.205, 798.478, -115.305, 744.03, -114.952, 713.142, -108.406, 715.812, -127.761, 749.85, -135.103 )
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PoolVector2Array( 298.178, 174.01, 429.377, 74.903, 372.744, 39.0357, 235.883, 142.862 )
-
-[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2( -264.667, 58.9624 )
-polygon = PoolVector2Array( -714.784, -167.533, -691, -179.425, -680.297, -188.344, -673.756, -209.749, -649.377, -217.479, -629.755, -200.236, -601.214, -193.101, -596.458, -178.83, -602.998, -171.1, -636.891, -165.154, -690.405, -160.992 )

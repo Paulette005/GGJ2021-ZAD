@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://DGodot/scripts/IDSouvenirs.gd" type="Script" id=2]
+[ext_resource path="res://DGodot/assets/ZoneSouvenirs/barricades/baricades7.png" type="Texture" id=3]
+[ext_resource path="res://DGodot/scripts/z_index.gd" type="Script" id=9]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 44.3658, 18.1713 )
+
+[node name="Lacrymo" type="Node2D"]
+position = Vector2( 596.023, 235.896 )
+script = ExtResource( 2 )
+IDSouvenirs = 2
+
+[node name="Sprite12" type="Sprite" parent="."]
+position = Vector2( -1020.95, 551.945 )
+texture = ExtResource( 3 )
+script = ExtResource( 9 )
+
+[node name="Sprite14" type="Sprite" parent="."]
+position = Vector2( -700.636, 768.764 )
+texture = ExtResource( 3 )
+script = ExtResource( 9 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( -220.194, 456.794 )
+texture = ExtResource( 3 )
+script = ExtResource( 9 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 0.75, 0.25 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -220.304, 479.092 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1019.68, 566.16 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -699.361, 782.979 )
+shape = SubResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="lacrymo" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2( -423.785, 19.0703 )
+polygon = PoolVector2Array( -129.479, 837.109, -303.231, 875.249, -440.962, 786.254, -362.561, 648.524, -239.664, 620.978, -129.479, 686.665 )
+
+[node name="lacrymo3" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2( 47.2693, -288.622 )
+polygon = PoolVector2Array( -129.479, 837.109, -303.231, 875.249, -440.962, 786.254, -362.561, 648.524, -239.664, 620.978, -129.479, 686.665 )
+
+[node name="lacrymo2" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2( -757.06, -192.132 )
+polygon = PoolVector2Array( -129.479, 837.109, -303.231, 875.249, -440.962, 786.254, -362.561, 648.524, -239.664, 620.978, -129.479, 686.665 )

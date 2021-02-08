@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://DGodot/scripts/z_index.gd" type="Script" id=1]
+[ext_resource path="res://DGodot/scripts/IDSouvenirs.gd" type="Script" id=2]
+[ext_resource path="res://DGodot/assets/Decors_elements/objetvarie3.png" type="Texture" id=3]
+
+[node name="Panneau" type="Node2D"]
+position = Vector2( 170.057, 109.407 )
+script = ExtResource( 2 )
+IDSouvenirs = 7
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 469.27, 435.634 )
+texture = ExtResource( 3 )
+script = ExtResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( -18.2987, 28.8232 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2( 458.105, 414.409 )
+polygon = PoolVector2Array( 149.317, 66.3934, 104.324, 97.5528, 50.291, 110.266, -53.8452, 100.286, -93.2817, 56.3027, -97.4861, -8.44635, -86.975, -52.5934, -64.2708, -82.4453, -26.0099, -100.945, 38.7391, -109.774, 103.264, -104.805, 148.896, -61.8433, 166.135, -34.0937, 164.453, 19.7237 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 454.873, 489.141, 442.571, 489.538, 462.016, 418.105, 463.738, 410.1, 478.234, 409.393, 483.049, 408.977, 508.448, 426.835, 498.526, 436.36, 474.319, 427.629, 467.969, 440.328 )

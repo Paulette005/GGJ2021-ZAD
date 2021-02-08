@@ -12,14 +12,16 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 640.857 ]
 }
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_right = 1034.0
-margin_bottom = 811.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 texture = ExtResource( 3 )
 expand = true
+flip_h = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -29,16 +31,23 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -111.0
-margin_top = 60.0
-margin_right = 112.0
-margin_bottom = 299.0
+margin_left = -111.5
+margin_top = 75.5
+margin_right = 111.5
+margin_bottom = 314.5
 alignment = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Sprite" type="Sprite" parent="VBoxContainer"]
+position = Vector2( 112.211, -255.989 )
+scale = Vector2( 0.55657, 0.55657 )
+texture = ExtResource( 4 )
+
 [node name="Jouer" type="TextureButton" parent="VBoxContainer"]
+anchor_top = -0.0669456
+anchor_bottom = -0.0669456
 margin_top = 12.0
 margin_right = 223.0
 margin_bottom = 118.0
@@ -96,10 +105,5 @@ text = "Quitter"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 511.711, 182.793 )
-scale = Vector2( 0.55657, 0.55657 )
-texture = ExtResource( 4 )
 [connection signal="pressed" from="VBoxContainer/Jouer" to="VBoxContainer/Jouer" method="_on_Jouer_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quitter" to="VBoxContainer/Quitter" method="_on_Quitter_pressed"]

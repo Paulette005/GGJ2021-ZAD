@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://DGodot/assets/ZoneSouvenirs/cuisine/cuisine1.png" type="Texture" id=1]
 [ext_resource path="res://DGodot/scripts/IDSouvenirs.gd" type="Script" id=2]
@@ -6,13 +6,10 @@
 [ext_resource path="res://DGodot/assets/ZoneSouvenirs/cuisine/cuisine2.png" type="Texture" id=4]
 [ext_resource path="res://DGodot/scripts/z_index.gd" type="Script" id=5]
 
-[sub_resource type="CircleShape2D" id=1]
-radius = 262.831
-
 [node name="FourPain" type="Node2D"]
 position = Vector2( 208.778, 381.637 )
 script = ExtResource( 2 )
-IDSouvenirs = 3
+IDSouvenirs = 4
 
 [node name="Sprite3" type="Sprite" parent="."]
 texture = ExtResource( 4 )
@@ -31,9 +28,8 @@ script = ExtResource( 5 )
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 0.75, 0.25 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 0, -0.445465 )
-shape = SubResource( 1 )
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( -16.7089, -136.43, 52.7811, -136.43, 130.289, -122.176, 195.325, -85.649, 234.524, 0.768158, 218.488, 88.0762, 96.9752, 130.973, -38.0905, 140.639, -161.925, 122.821, -206.47, 66.6947, -199.343, -19.7225, -155.689, -74.0673, -104.017, -108.812, -65.7084, -123.067 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
