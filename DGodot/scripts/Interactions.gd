@@ -24,7 +24,7 @@ func on_body_entered(body):
 			Interaction.visible = true
 		GestionDial = IDSouvenirs
 		print(IDSouvenirs)
-		print(Narration.Narration)
+		print("Narration: ", Narration.Narration)
 		if IDSouvenirs == 0:
 			indexArray = 0
 			parle()
@@ -46,10 +46,10 @@ func parle():
 		if IDSouvenirs == 0:
 			if Narration.Narration == 0:
 				BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[GestionDial][indexArray]
-			elif Narration.Narration == 6:
+			elif Narration.Narration == 10:
 				GestionDial = 11
 				BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[GestionDial][indexArray]
-			elif Narration.Narration > 0 && Narration.Narration < 6:
+			elif Narration.Narration > 0 && Narration.Narration < 9:
 				GestionDial = 10
 				BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[GestionDial][indexArray]
 		else:
@@ -65,6 +65,7 @@ func parle():
 	else:
 		Dialogues.visible = false
 		indexArray = 0
-		if NbrDial == 0:
-			NbrDial += 1
-			Narration.Narration += 1
+		if IDSouvenirs <= 9:
+			if NbrDial == 0:
+				NbrDial += 1
+				Narration.Narration += 1
