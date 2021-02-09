@@ -5,13 +5,13 @@ var IDSouvenirs
 var GestionDial
 var indexArray = 0
 var NbrDial = 0
-var Narration = 0
 
 var RandomDial = RandomNumberGenerator.new()
 
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 onready var BoiteDialogues = get_node("/root/Node2D/CanvasLayer/Dialogues/BoiteDialogues")
 onready var Interaction = get_node("/root/Node2D/CanvasLayer/Interaction")
+onready var Narration = (get_node("/root/Node2D"))
 
 func _ready():
 	get_node("Area2D").connect("body_entered",self,"on_body_entered")
@@ -24,7 +24,9 @@ func on_body_entered(body):
 			Interaction.visible = true
 		GestionDial = IDSouvenirs
 		print(IDSouvenirs)
+		print(Narration.Narration)
 		if IDSouvenirs == 0:
+			indexArray = 0
 			parle()
 
 func on_body_exited(body):
@@ -42,12 +44,12 @@ func _input(event):
 func parle():
 	if indexArray < BoiteDialogues.DialSouvenir[GestionDial].size():
 		if IDSouvenirs == 0:
-			if Narration == 0:
+			if Narration.Narration == 0:
 				BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[GestionDial][indexArray]
-			elif Narration == 6:
+			elif Narration.Narration == 6:
 				GestionDial = 11
 				BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[GestionDial][indexArray]
-			elif Narration > 0 && Narration < 6:
+			elif Narration.Narration > 0 && Narration.Narration < 6:
 				GestionDial = 10
 				BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[GestionDial][indexArray]
 		else:
@@ -65,4 +67,4 @@ func parle():
 		indexArray = 0
 		if NbrDial == 0:
 			NbrDial += 1
-			Narration += 1
+			Narration.Narration += 1

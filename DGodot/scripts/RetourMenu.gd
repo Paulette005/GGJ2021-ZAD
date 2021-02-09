@@ -1,5 +1,7 @@
 extends Node2D
 
+export var Narration = 0
+
 func _ready():
 	pass # Replace with function body.
 
