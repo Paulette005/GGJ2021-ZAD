@@ -4,6 +4,9 @@ extends TextureButton
 	
 #		$grabfocus()
 
+func _ready():
+	get_node("/root/Control/VBoxContainer/Jouer").grab_focus()
+
 func _on_Jouer_pressed():
 	get_tree().change_scene("res://DGodot/scenes/scene_LD2.tscn")
 
