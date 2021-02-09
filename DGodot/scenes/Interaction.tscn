@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://DGodot/assets/Font/fontCalibri.tres" type="DynamicFont" id=2]
+[ext_resource path="res://DGodot/assets/Font/fontMenu.tres" type="DynamicFont" id=1]
 [ext_resource path="res://DGodot/assets/boutons-interagir.png" type="Texture" id=3]
 
 [node name="Control" type="Control"]
@@ -38,14 +38,15 @@ __meta__ = {
 
 [node name="espace" type="RichTextLabel" parent="Interaction/TextureRect2"]
 anchor_left = 0.5
-anchor_top = 1.0
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -25.8766
-margin_top = -28.6548
-margin_right = 66.1234
-margin_bottom = 11.3452
-custom_fonts/mono_font = ExtResource( 2 )
+anchor_bottom = 0.5
+margin_left = -29.5
+margin_top = -16.0
+margin_right = 29.5
+margin_bottom = 22.0
+custom_fonts/mono_font = ExtResource( 1 )
+custom_fonts/normal_font = ExtResource( 1 )
 custom_colors/default_color = Color( 0.835294, 0.403922, 0.0196078, 1 )
 bbcode_text = "Chercher"
 text = "Chercher"

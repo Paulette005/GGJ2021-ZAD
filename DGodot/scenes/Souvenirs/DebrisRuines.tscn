@@ -6,7 +6,7 @@
 
 [node name="DebrisRuines" type="Node2D"]
 script = ExtResource( 3 )
-IDSouvenirs = 13
+IDSouvenirs = 14
 
 [node name="Sprite5" type="Sprite" parent="."]
 position = Vector2( 393.26, 392.451 )

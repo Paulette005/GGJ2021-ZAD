@@ -7,7 +7,7 @@
 [node name="Ruines_Tour" type="Node2D"]
 position = Vector2( 533.898, 373.181 )
 script = ExtResource( 2 )
-IDSouvenirs = 14
+IDSouvenirs = 15
 
 [node name="Sprite2" type="Sprite" parent="."]
 texture = ExtResource( 1 )
