@@ -161,7 +161,7 @@ position = Vector2( 416.158, 1603.95 )
 script = ExtResource( 35 )
 
 [node name="ZoneNonMixte" parent="ZonesSouvenir" instance=ExtResource( 54 )]
-position = Vector2( -2524.49, -1742.88 )
+position = Vector2( -2508.11, -1732.8 )
 script = ExtResource( 35 )
 
 [node name="LD" type="Node2D" parent="."]
