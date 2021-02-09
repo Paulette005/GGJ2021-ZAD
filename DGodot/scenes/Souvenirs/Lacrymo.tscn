@@ -18,12 +18,12 @@ texture = ExtResource( 3 )
 script = ExtResource( 9 )
 
 [node name="Sprite14" type="Sprite" parent="."]
-position = Vector2( -700.636, 768.764 )
+position = Vector2( -754.608, 784.638 )
 texture = ExtResource( 3 )
 script = ExtResource( 9 )
 
 [node name="Sprite4" type="Sprite" parent="."]
-position = Vector2( -220.194, 456.794 )
+position = Vector2( 856.064, 469.493 )
 texture = ExtResource( 3 )
 script = ExtResource( 9 )
 
@@ -31,27 +31,27 @@ script = ExtResource( 9 )
 position = Vector2( 0.75, 0.25 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( -220.304, 479.092 )
+position = Vector2( 855.954, 491.791 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( -1019.68, 566.16 )
+position = Vector2( -1025.65, 579.034 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( -699.361, 782.979 )
+position = Vector2( -753.333, 798.853 )
 shape = SubResource( 1 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="lacrymo" type="CollisionPolygon2D" parent="Area2D"]
-position = Vector2( -423.785, 19.0703 )
+position = Vector2( -477.757, 34.9443 )
 polygon = PoolVector2Array( -129.479, 837.109, -303.231, 875.249, -440.962, 786.254, -362.561, 648.524, -239.664, 620.978, -129.479, 686.665 )
 
 [node name="lacrymo3" type="CollisionPolygon2D" parent="Area2D"]
-position = Vector2( 47.2693, -288.622 )
+position = Vector2( 1123.53, -275.923 )
 polygon = PoolVector2Array( -129.479, 837.109, -303.231, 875.249, -440.962, 786.254, -362.561, 648.524, -239.664, 620.978, -129.479, 686.665 )
 
 [node name="lacrymo2" type="CollisionPolygon2D" parent="Area2D"]
-position = Vector2( -757.06, -192.132 )
+position = Vector2( -757.06, -193.719 )
 polygon = PoolVector2Array( -129.479, 837.109, -303.231, 875.249, -440.962, 786.254, -362.561, 648.524, -239.664, 620.978, -129.479, 686.665 )
