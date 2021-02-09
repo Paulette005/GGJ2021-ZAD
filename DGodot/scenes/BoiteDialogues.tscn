@@ -18,7 +18,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 933.956, 137.782 ), Vector2( 933.956, 143.782 ) ]
+"values": [ Vector2( 933.956, 137.782 ), Vector2( 939.956, 137.782 ) ]
 }
 
 [node name="Control" type="Control"]
@@ -73,7 +73,7 @@ __meta__ = {
 }
 
 [node name="Icone" type="Sprite" parent="BoiteDialogues"]
-position = Vector2( 933.956, 143.207 )
+position = Vector2( 934.051, 137.782 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 4 )
 

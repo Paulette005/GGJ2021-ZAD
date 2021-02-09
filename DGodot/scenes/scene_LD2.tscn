@@ -116,7 +116,7 @@ position = Vector2( -2450.96, -3480.7 )
 script = ExtResource( 35 )
 
 [node name="PetiteRuine" parent="ZonesSouvenir/PasSouvenirs" instance=ExtResource( 51 )]
-position = Vector2( -2207.18, -2099.81 )
+position = Vector2( 610.992, -3184.7 )
 script = ExtResource( 35 )
 
 [node name="DebrisRuines" parent="ZonesSouvenir/PasSouvenirs" instance=ExtResource( 50 )]
@@ -124,7 +124,7 @@ position = Vector2( -3106.25, -1349.88 )
 script = ExtResource( 35 )
 
 [node name="Panneau" parent="ZonesSouvenir" instance=ExtResource( 53 )]
-position = Vector2( -833.883, -908.994 )
+position = Vector2( -1171.62, -1551.17 )
 script = ExtResource( 35 )
 
 [node name="Lacrymo" parent="ZonesSouvenir" instance=ExtResource( 49 )]
@@ -136,7 +136,7 @@ position = Vector2( 210.778, 967.601 )
 script = ExtResource( 35 )
 
 [node name="FourPain" parent="ZonesSouvenir" instance=ExtResource( 18 )]
-position = Vector2( -2652.43, -1690.13 )
+position = Vector2( -359.741, -395.778 )
 script = ExtResource( 35 )
 
 [node name="Habitations" parent="ZonesSouvenir" instance=ExtResource( 3 )]
@@ -148,7 +148,7 @@ position = Vector2( -2920.26, 230.495 )
 script = ExtResource( 35 )
 
 [node name="CoinFeu" parent="ZonesSouvenir" instance=ExtResource( 40 )]
-position = Vector2( -2449.25, -1495.82 )
+position = Vector2( -2311.8, -1493.55 )
 script = ExtResource( 35 )
 
 [node name="Ruines_Remise" parent="ZonesSouvenir" instance=ExtResource( 19 )]
@@ -161,7 +161,7 @@ position = Vector2( 416.158, 1603.95 )
 script = ExtResource( 35 )
 
 [node name="ZoneNonMixte" parent="ZonesSouvenir" instance=ExtResource( 54 )]
-position = Vector2( 850.537, -50.1911 )
+position = Vector2( -2524.49, -1742.88 )
 script = ExtResource( 35 )
 
 [node name="LD" type="Node2D" parent="."]
@@ -173,7 +173,7 @@ __meta__ = {
 }
 
 [node name="blanc" parent="LD/arbres" instance=ExtResource( 2 )]
-position = Vector2( 1304.57, 60 )
+position = Vector2( 930.57, 36 )
 
 [node name="haut" type="StaticBody2D" parent="LD/arbres"]
 position = Vector2( -653.262, -3287.29 )

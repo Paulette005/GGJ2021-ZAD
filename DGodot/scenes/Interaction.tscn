@@ -23,25 +23,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="interaction" type="RichTextLabel" parent="Interaction"]
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -38.5457
-margin_top = -67.8598
-margin_right = 100.454
-margin_bottom = -42.8598
-size_flags_horizontal = 5
-size_flags_vertical = 3
-custom_fonts/mono_font = ExtResource( 2 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
-bbcode_text = "Interaction"
-text = "Interaction"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="TextureRect2" type="TextureRect" parent="Interaction"]
 anchor_left = 0.5
 anchor_top = 1.0
@@ -67,7 +48,7 @@ margin_bottom = 11.3452
 custom_fonts/mono_font = ExtResource( 2 )
 custom_colors/default_color = Color( 0.835294, 0.403922, 0.0196078, 1 )
 bbcode_text = "Espace"
-text = "Espace"
+text = "Chercher"
 __meta__ = {
 "_edit_use_anchors_": false
 }

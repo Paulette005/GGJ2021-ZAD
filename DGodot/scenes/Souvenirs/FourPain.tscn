@@ -7,7 +7,7 @@
 [ext_resource path="res://DGodot/scripts/z_index.gd" type="Script" id=5]
 
 [node name="FourPain" type="Node2D"]
-position = Vector2( 208.778, 381.637 )
+position = Vector2( 230.126, 260.671 )
 script = ExtResource( 2 )
 IDSouvenirs = 4
 
@@ -16,12 +16,12 @@ texture = ExtResource( 4 )
 script = ExtResource( 5 )
 
 [node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( 365.922, -208.778 )
+position = Vector2( 537.707, -14.3399 )
 texture = ExtResource( 3 )
 script = ExtResource( 5 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 449.842, -143.371 )
+position = Vector2( 621.627, 51.0671 )
 texture = ExtResource( 1 )
 script = ExtResource( 5 )
 
@@ -29,6 +29,7 @@ script = ExtResource( 5 )
 position = Vector2( 0.75, 0.25 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2( -43.4182, 26.4285 )
 polygon = PoolVector2Array( -16.7089, -136.43, 52.7811, -136.43, 130.289, -122.176, 195.325, -85.649, 234.524, 0.768158, 218.488, 88.0762, 96.9752, 130.973, -38.0905, 140.639, -161.925, 122.821, -206.47, 66.6947, -199.343, -19.7225, -155.689, -74.0673, -104.017, -108.812, -65.7084, -123.067 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -37,4 +38,5 @@ polygon = PoolVector2Array( -16.7089, -136.43, 52.7811, -136.43, 130.289, -122.1
 polygon = PoolVector2Array( 77.2474, 44.2533, -14.3979, 62.7512, -100.932, 49.5987, -97.8142, 17.5263, -92.9142, -19.0005, -13.0631, -15.3369, 74.1293, -14.9915, 80.811, 13.0719 )
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( 173.673, 196.326 )
 polygon = PoolVector2Array( 521.324, -62.7047, 468.134, -79.1861, 429.178, -66.4504, 372.242, -75.4403, 375.988, -145.112, 362.673, -150.115, 325.591, -145.347, 262.553, -142.698, 250.369, -162.828, 244.542, -225.337, 310.846, -229.262, 395.874, -231.045, 426.199, -225.099, 447.959, -206.796, 479.371, -181.071, 534.059, -172.081, 530.313, -126.383 )
