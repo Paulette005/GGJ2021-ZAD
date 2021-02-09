@@ -3,7 +3,7 @@
 [ext_resource path="res://DGodot/assets/boite-dialogue.png" type="Texture" id=1]
 [ext_resource path="res://DGodot/scripts/Souvenirs.gd" type="Script" id=2]
 [ext_resource path="res://DGodot/assets/Font/fontCalibri.tres" type="DynamicFont" id=3]
-[ext_resource path="res://DGodot/assets/icon.png" type="Texture" id=4]
+[ext_resource path="res://DGodot/assets/fleche-dialogue.png" type="Texture" id=4]
 
 [sub_resource type="Animation" id=1]
 resource_name = "mouv"
@@ -73,8 +73,8 @@ __meta__ = {
 }
 
 [node name="Icone" type="Sprite" parent="BoiteDialogues"]
-position = Vector2( 933.956, 138.13 )
-scale = Vector2( 0.685472, 0.685472 )
+position = Vector2( 933.956, 143.207 )
+scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 4 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="BoiteDialogues/Icone"]

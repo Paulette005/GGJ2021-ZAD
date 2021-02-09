@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/LD 2.jpg-3d027c46141720b9884c47fa527236bb.stex"
+path="res://.import/boutons-interagir.png-1765847c856b6518ebd9e8a31942ef0c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DGodot/assets/LD 2.jpg"
-dest_files=[ "res://.import/LD 2.jpg-3d027c46141720b9884c47fa527236bb.stex" ]
+source_file="res://DGodot/assets/boutons-interagir.png"
+dest_files=[ "res://.import/boutons-interagir.png-1765847c856b6518ebd9e8a31942ef0c.stex" ]
 
 [params]
 
