@@ -10,8 +10,9 @@ script = ExtResource( 2 )
 IDSouvenirs = 7
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 469.27, 435.634 )
+position = Vector2( 450.271, 487.93 )
 texture = ExtResource( 3 )
+offset = Vector2( 18.9994, -52.2961 )
 script = ExtResource( 1 )
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -24,4 +25,4 @@ polygon = PoolVector2Array( 149.317, 66.3934, 104.324, 97.5528, 50.291, 110.266,
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PoolVector2Array( 454.873, 489.141, 442.571, 489.538, 462.016, 418.105, 463.738, 410.1, 478.234, 409.393, 483.049, 408.977, 508.448, 426.835, 498.526, 436.36, 474.319, 427.629, 467.969, 440.328 )
+polygon = PoolVector2Array( 454.873, 489.141, 442.571, 489.538, 440.258, 475.916, 445.597, 463.902, 454.941, 458.563, 466.287, 464.57, 474.296, 479.253 )

@@ -124,7 +124,7 @@ position = Vector2( -3106.25, -1349.88 )
 script = ExtResource( 35 )
 
 [node name="Panneau" parent="ZonesSouvenir" instance=ExtResource( 53 )]
-position = Vector2( -1171.62, -1551.17 )
+position = Vector2( -916.618, -920.988 )
 script = ExtResource( 35 )
 
 [node name="Lacrymo" parent="ZonesSouvenir" instance=ExtResource( 49 )]
@@ -136,7 +136,7 @@ position = Vector2( 210.778, 967.601 )
 script = ExtResource( 35 )
 
 [node name="FourPain" parent="ZonesSouvenir" instance=ExtResource( 18 )]
-position = Vector2( -359.741, -395.778 )
+position = Vector2( 698.357, -244.918 )
 script = ExtResource( 35 )
 
 [node name="Habitations" parent="ZonesSouvenir" instance=ExtResource( 3 )]
@@ -173,7 +173,7 @@ __meta__ = {
 }
 
 [node name="blanc" parent="LD/arbres" instance=ExtResource( 2 )]
-position = Vector2( 930.57, 36 )
+position = Vector2( 942.751, 204.587 )
 
 [node name="haut" type="StaticBody2D" parent="LD/arbres"]
 position = Vector2( -653.262, -3287.29 )
@@ -1144,6 +1144,6 @@ polygon = PoolVector2Array( -2354.16, 103.232, 983.22, 110.833, 969.765, -439.11
 
 [node name="Ambiance" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 39 )
-volume_db = -25.0
+volume_db = -20.0
 autoplay = true
 [connection signal="item_rect_changed" from="LD/fond/texturre_mix" to="LD/fond/texturre_mix" method="calculate_size"]
