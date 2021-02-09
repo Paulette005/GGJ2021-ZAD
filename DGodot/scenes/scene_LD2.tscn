@@ -136,7 +136,7 @@ position = Vector2( 210.778, 967.601 )
 script = ExtResource( 35 )
 
 [node name="FourPain" parent="ZonesSouvenir" instance=ExtResource( 18 )]
-position = Vector2( -359.741, -395.778 )
+position = Vector2( -382.368, -373.151 )
 script = ExtResource( 35 )
 
 [node name="Habitations" parent="ZonesSouvenir" instance=ExtResource( 3 )]
@@ -173,7 +173,7 @@ __meta__ = {
 }
 
 [node name="blanc" parent="LD/arbres" instance=ExtResource( 2 )]
-position = Vector2( 930.57, 36 )
+position = Vector2( 947.078, 199.301 )
 
 [node name="haut" type="StaticBody2D" parent="LD/arbres"]
 position = Vector2( -653.262, -3287.29 )
