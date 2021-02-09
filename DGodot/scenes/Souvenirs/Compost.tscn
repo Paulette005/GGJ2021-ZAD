@@ -6,7 +6,7 @@
 [node name="Compost" type="Node2D"]
 position = Vector2( 170.057, 109.407 )
 script = ExtResource( 2 )
-IDSouvenirs = 2
+IDSouvenirs = 6
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -3.77539, -5.66321 )

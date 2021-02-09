@@ -1,9 +1,5 @@
 extends TextureButton
 
-#func _input(event):
-	
-#		$grabfocus()
-
 func _ready():
 	get_node("/root/Control/VBoxContainer/Jouer").grab_focus()
 
