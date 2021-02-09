@@ -157,6 +157,7 @@ position = Vector2( 323.542, -1381.77 )
 script = ExtResource( 35 )
 
 [node name="Route" parent="ZonesSouvenir" instance=ExtResource( 23 )]
+visible = false
 position = Vector2( 416.158, 1603.95 )
 script = ExtResource( 35 )
 
