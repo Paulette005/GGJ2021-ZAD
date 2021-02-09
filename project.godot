@@ -16,13 +16,15 @@ _global_script_class_icons={
 [application]
 
 config/name="Histoire d'une ZAD"
-run/main_scene="res://DGodot/scenes/Menu.tscn"
+run/main_scene="res://DGodot/scenes/Logo.tscn"
 config/icon="res://DGodot/assets/icone.png"
 config/macos_native_icon="res://DGodot/assets/icone.ico"
 config/windows_native_icon="res://DGodot/assets/icone.ico"
 
 [display]
 
+window/size/width=1280
+window/size/height=720
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
 
