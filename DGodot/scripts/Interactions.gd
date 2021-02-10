@@ -44,14 +44,15 @@ func _input(event):
 func parle():
 	if indexArray < BoiteDialogues.DialSouvenir[GestionDial].size():
 		if IDSouvenirs == 0:
-			if Narration.Narration == 0:
+			if NbrDial == 0:
 				BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[GestionDial][indexArray]
-			elif Narration.Narration == 10:
-				GestionDial = 11
-				BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[GestionDial][indexArray]
-			elif Narration.Narration > 0 && Narration.Narration < 9:
+			if NbrDial == 1 && Narration.Narration < 10:
 				GestionDial = 10
 				BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[GestionDial][indexArray]
+			else:
+				GestionDial = 11
+				BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[GestionDial][indexArray]
+			
 		else:
 			if NbrDial == 0:
 				BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[GestionDial][indexArray]

@@ -19,7 +19,7 @@ var DialSouvenir = [
 	"Puis, soudainement, tout fut fini, les fumées s’estompèrent. Les policiers se replièrent pour nous laisser là, hagards, à panser nos blessures, nos colères et nos rancunes. Nous avions gagné, remporté le combat pour la forêt.",
 	"Cela annonçait également la fin de ce qu’avait été cette ZAD. Peu de temps après, une grande partie d’entre nous somme partis, certain·es fatigué·es de lutter, d’autres souhaitant s’investir au sein d’autres zones à défendre."],
 	["Ce sont toutes les lacrymos que l’on avait récupéré après la dernière charge de la police. Entassées ici, pour mettre en évidence la violence que l’on avait subi. Cette violence aveugle d’un état déconnecté des réalités de ce terrain, de ses habitants.",
-	"On en avait retrouvé dans les 5000, effrayant... Mais loin de ce qu’avait pu subir NDDL.."],
+	"On en avait retrouvé dans les 5000, effrayant... Mais loin de ce qu’avait pu subir Notre-Dame-des-Landes."],
 	["Tiens, voilà le fauteuil de Steph, iel le sortait de sa piaule tous les soirs pour nous rejoindre près du feu. Iel chantait bien.",
 	"A un moment ou un autre de la soirée on avait toujours le droit à l'internationale. C’est ce qui faisait le charme de nos rassemblements.",
 	"Nous étions tou·tes, malgré nos antécédents et nos opinions politiques, uni·es dans la lutte contre un ennemi commun. C’était une de nos forces et un des moteurs de nos tolérances les un·es envers les autres."],
@@ -31,7 +31,7 @@ var DialSouvenir = [
 	"On comptait sur la responsabilité de chacun·e pour se servir raisonnablement et sur la générosité de tou·tes pour faire tourner la remise. Bien que quelques-un·es abusaient, dans l’ensemble chacun·es jouaient le jeu.",
 	"J’y mettais régulièrement des écharpes que j’avais tricotées grâce à la laine des quelques moutons qu’on avait. Et, entre autre choses, j‘y avais trouvé mon super chapeau."],
 	["Voilà l’ancien potager ! Il prospère sans nous, ça fait plaisir à voir !",
-	"Je m’en suis occupé pendant une période. J’étais avec Liz, une Allemande, persuadée qu’elle pourrait faire pousser des melons ici...",
+	"Je m’en suis occupé pendant une période. J’étais avec Liz, une allemande, persuadée qu’elle pourrait faire pousser des melons ici...",
 	"Elle semblait avoir la main verte pour tout type de légumes et de fruits mais on a jamais vu pousser un seul melon. Visiblement, aucun n’a voulu germer depuis notre départ."],
 	["Maintenant que j’y pense, j’ai quand même vachement bougé ici. Un jour au pain, un jour au bois, un autre à apprendre la musique. C’est vrai que j’ai énormément appris ici.",
 	"Au début, j’étais pas autant débrouillarde et la transition entre ma vie d’avant et la nouvelle a été rude.",
@@ -42,7 +42,7 @@ var DialSouvenir = [
 	"C’est Grande Stache qui m’a dit de ne pas trop me tracasser et de me poser là pour la nuit. J’avais quand même fais le tour de tous les voisin·es pour être sûre de ne pas gêner.",
 	"Grâce aux tâches partagées et aux moments de vie commune, j’ai très vite pu comprendre dans quoi je m’étais embarquée. C’était vraiment une sorte de rebond dans mon existence.",
 	"Ça n’a pas, bien sûr, rendu tout facile, mais au moins j’avais l’impression d’avoir un but et de voir une ouverture vers un avenir plus juste."],
-	["Ici c’était notre zone de réunion en non mixité féministe ou anti raciste. On en avait besoin régulièrement pour discuter de tous les problèmes avec les mecs cis ou les blanch·e·s.",
+	["Ici c’était notre zone de réunion en non mixité féministe et anti raciste. On en avait besoin régulièrement pour discuter de tous les problèmes avec les mecs cis ou les blanch·e·s.",
 	"Beaucoup avaient du mal à comprendre qu’être anarchiste, anti-système, ne suffisait pas à être respectueux avec tout le monde. En particulier avec les meufs, les non binaires et les personnes racisé·e·s.",
 	"Il y avait un gros travail de déconstruction du sexisme et du racisme à faire. Heureusement on avait plein d’outils, du bâton de parole en réunion, aux plannings de tâches ménagères, on arrivait à faire progresser les choses.",
 	"Pour les cas d’agressions, on partait du principe qu’on écoutait la victime et pas l’agresseur. C’était à la personne agressée de définir la gravité du problème et de décider de ce qu’on faisait. Même si c’était rare, on a dû exclure quelques mecs."],
@@ -52,7 +52,7 @@ var DialSouvenir = [
 	["Rien de plus ici."],
 	["Je ne vois rien à rajouter."],
 	["Je ne vois rien qui me rappelle quelque chose."],
-	["Il n’y a rien ici."]
+	["Il n’y a rien d’intéressant ici."]
 	]
 
 #func _ready():
