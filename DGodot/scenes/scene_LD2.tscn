@@ -55,10 +55,10 @@
 [ext_resource path="res://DGodot/scenes/Souvenirs/Panneau.tscn" type="PackedScene" id=53]
 [ext_resource path="res://DGodot/scenes/Souvenirs/ZoneNonMixte.tscn" type="PackedScene" id=54]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 83.9053, 20.2272 )
 
-[sub_resource type="ShaderMaterial" id=1]
+[sub_resource type="ShaderMaterial" id=2]
 shader = ExtResource( 43 )
 shader_param/rect_size = Vector2( 5904.12, 5669.19 )
 shader_param/texture_fond_size = Vector2( 1183, 630 )
@@ -100,7 +100,7 @@ editor_draw_limits = true
 script = ExtResource( 33 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 443.715, 1878.98 )
+position = Vector2( 724.377, 1626.72 )
 script = ExtResource( 37 )
 
 [node name="ZonesSouvenir" type="Node2D" parent="."]
@@ -161,7 +161,7 @@ script = ExtResource( 35 )
 
 [node name="Route" parent="ZonesSouvenir" instance=ExtResource( 23 )]
 visible = false
-position = Vector2( 416.158, 1603.95 )
+position = Vector2( 725.5, 1394.53 )
 script = ExtResource( 35 )
 
 [node name="ZoneNonMixte" parent="ZonesSouvenir" instance=ExtResource( 54 )]
@@ -169,9 +169,10 @@ position = Vector2( -2508.11, -1732.8 )
 script = ExtResource( 35 )
 
 [node name="velo" type="Node2D" parent="ZonesSouvenir"]
-position = Vector2( 703.688, 1536.94 )
+position = Vector2( 745.688, 1537.94 )
 
 [node name="velo" type="Sprite" parent="ZonesSouvenir/velo"]
+position = Vector2( 2.24487, 0 )
 texture = ExtResource( 32 )
 offset = Vector2( 0.0183105, -40.8101 )
 script = ExtResource( 36 )
@@ -180,7 +181,7 @@ script = ExtResource( 36 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ZonesSouvenir/velo/StaticBody2D"]
 position = Vector2( -4.49487, -13.4847 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="LD" type="Node2D" parent="."]
 
@@ -1140,7 +1141,7 @@ __meta__ = {
 }
 
 [node name="texturre_mix" type="Sprite" parent="LD/fond"]
-material = SubResource( 1 )
+material = SubResource( 2 )
 position = Vector2( -937.578, -963.604 )
 scale = Vector2( 1.96804, 1.88973 )
 z_index = -2990

@@ -46,13 +46,15 @@ var DialSouvenir = [
 	"Beaucoup avaient du mal à comprendre qu’être anarchiste, anti-système, ne suffisait pas à être respectueux avec tout le monde. En particulier avec les meufs, les non binaires et les personnes racisé·e·s.",
 	"Il y avait un gros travail de déconstruction du sexisme et du racisme à faire. Heureusement on avait plein d’outils, du bâton de parole en réunion, aux plannings de tâches ménagères, on arrivait à faire progresser les choses.",
 	"Pour les cas d’agressions, on partait du principe qu’on écoutait la victime et pas l’agresseur. C’était à la personne agressée de définir la gravité du problème et de décider de ce qu’on faisait. Même si c’était rare, on a dû exclure quelques mecs."],
-	["Il me reste des choses à voir."],
+	["Je ne peux pas partir, il me reste des choses à voir."],
 	["Ça fait toujours un peu de peine de voir ce lieu laissé à l’abandon, après tout ce que j’ai pu y vivre. Je ne peux pas m’empêcher de me rappeler de tous ces moments vécus...",
-	"Du désespoir après le saccage et la destruction de nos structures par les flics. C’est ce qui m’avait incitée à partir ailleurs plutôt que de rester ici à tout recommencer. D’autres épuisés ont préféré se ranger, se poser."],
+	"Du désespoir après le saccage et la destruction de nos structures par les flics. C’est ce qui m’avait incitée à partir ailleurs plutôt que de rester ici à tout recommencer. D’autres épuisés ont préféré se ranger, se poser.",
+	"Croire en un monde meilleur c’est beaucoup d’effort, bien souvent durement réprimé. J’aime toujours penser que les ZAD sont des portes d’entrée vers de nouvelles utopies, des terrains d’expérimentation d’autres formes de vivre ensemble."],
 	["Rien de plus ici."],
 	["Je ne vois rien à rajouter."],
 	["Je ne vois rien qui me rappelle quelque chose."],
-	["Il n’y a rien d’intéressant ici."]
+	["Il n’y a rien d’intéressant ici."],
+	["Je crois que j'ai fait le tour, il va être temps de partir."]
 	]
 
 #func _ready():

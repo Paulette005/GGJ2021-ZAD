@@ -5,6 +5,7 @@ var IDSouvenirs
 var GestionDial
 var indexArray = 0
 var NbrDial = 0
+var fin = 0
 
 var RandomDial = RandomNumberGenerator.new()
 
@@ -32,15 +33,26 @@ func on_body_entered(body):
 func on_body_exited(body):
 	if body.name == "Player":
 		playerZone = false
-		Interaction.visible = false
 		Dialogues.visible = false
+		Interaction.visible = false
 		indexArray = 0
+		if Narration.Narration == 10 && fin == 0:
+			messagefin()
 
 func _input(event):
 	if event.is_action_pressed("ui_accept") && playerZone:
 		parle()
 		Interaction.visible = false
-
+	if event.is_action_pressed("ui_accept") && fin == 1:
+		fin += 1
+		Narration.Narration += 1
+		Dialogues.visible = false
+		indexArray = 0
+		
+func messagefin():
+	fin += 1
+	parle()
+	
 func parle():
 	if indexArray < BoiteDialogues.DialSouvenir[GestionDial].size():
 		if IDSouvenirs == 0:
@@ -49,10 +61,9 @@ func parle():
 			if NbrDial == 1 && Narration.Narration < 10:
 				GestionDial = 10
 				BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[GestionDial][indexArray]
-			else:
+			elif NbrDial == 1 && Narration.Narration == 11:
 				GestionDial = 11
 				BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[GestionDial][indexArray]
-			
 		else:
 			if NbrDial == 0:
 				BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[GestionDial][indexArray]
@@ -61,6 +72,10 @@ func parle():
 				GestionDial = RandomDial.randi_range(12,13)
 				BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[GestionDial][indexArray]
 				
+		if fin == 1:
+			GestionDial = 16
+			BoiteDialogues.Souvenirs = BoiteDialogues.DialSouvenir[GestionDial][indexArray]
+			
 		indexArray += 1
 		Dialogues.visible = true
 	else:
