@@ -12,6 +12,7 @@ var RandomDial = RandomNumberGenerator.new()
 onready var Dialogues = get_node("/root/Node2D/CanvasLayer/Dialogues")
 onready var BoiteDialogues = get_node("/root/Node2D/CanvasLayer/Dialogues/BoiteDialogues")
 onready var Interaction = get_node("/root/Node2D/CanvasLayer/Interaction")
+onready var PartirFin = get_node("/root/Node2D/CanvasLayer/Partir")
 onready var Narration = (get_node("/root/Node2D"))
 
 func _ready():
@@ -24,9 +25,11 @@ func on_body_entered(body):
 		if IDSouvenirs != 0:
 			Interaction.visible = true
 		GestionDial = IDSouvenirs
+		if IDSouvenirs == 0 && NbrDial != 0:
+			PartirFin.visible = true
 		print(IDSouvenirs)
 		print("Narration: ", Narration.Narration)
-		if IDSouvenirs == 0:
+		if IDSouvenirs == 0 && NbrDial == 0:
 			indexArray = 0
 			parle()
 
@@ -35,6 +38,7 @@ func on_body_exited(body):
 		playerZone = false
 		Dialogues.visible = false
 		Interaction.visible = false
+		PartirFin.visible = false
 		indexArray = 0
 		if Narration.Narration == 10 && fin == 0:
 			messagefin()
@@ -43,6 +47,8 @@ func _input(event):
 	if event.is_action_pressed("ui_accept") && playerZone:
 		parle()
 		Interaction.visible = false
+		PartirFin.visible = false
+
 	if event.is_action_pressed("ui_accept") && fin == 1:
 		fin += 1
 		Narration.Narration += 1
@@ -85,3 +91,5 @@ func parle():
 			if NbrDial == 0:
 				NbrDial += 1
 				Narration.Narration += 1
+		if IDSouvenirs == 0 && Narration.Narration == 11:
+			get_tree().change_scene("res://DGodot/scenes/Fin.tscn")

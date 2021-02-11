@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://DGodot/assets/boutons-interagir.png" type="Texture" id=1]
+[ext_resource path="res://DGodot/assets/Font/fontMenu.tres" type="DynamicFont" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 512.473 ]
+}
+
+[node name="Interaction" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -120.5
+margin_top = -99.0
+margin_right = 120.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="Interaction"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -69.5
+margin_top = -44.0
+margin_right = 69.5
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="espace" type="RichTextLabel" parent="Interaction/TextureRect2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -21.0
+margin_top = -16.5
+margin_right = 21.0
+margin_bottom = 18.5
+custom_fonts/mono_font = ExtResource( 2 )
+custom_fonts/normal_font = ExtResource( 2 )
+custom_colors/default_color = Color( 0.835294, 0.403922, 0.0196078, 1 )
+bbcode_text = "Partir"
+text = "Partir"
+__meta__ = {
+"_edit_use_anchors_": false
+}

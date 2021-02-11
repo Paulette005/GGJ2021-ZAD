@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://DGodot/scenes/Souvenirs/Barricades.tscn" type="PackedScene" id=1]
 [ext_resource path="res://DGodot/assets/Arbres/scenes arbres/blanc.tscn" type="PackedScene" id=2]
@@ -31,7 +31,6 @@
 [ext_resource path="res://DGodot/assets/Buissons/buisson5.png" type="Texture" id=29]
 [ext_resource path="res://DGodot/assets/fond/fond-herbe.jpg" type="Texture" id=30]
 [ext_resource path="res://DGodot/assets/Buissons/buisson1.png" type="Texture" id=31]
-[ext_resource path="res://DGodot/assets/velo.png" type="Texture" id=32]
 [ext_resource path="res://DGodot/scripts/Camera2D.gd" type="Script" id=33]
 [ext_resource path="res://DGodot/scripts/RetourMenu.gd" type="Script" id=34]
 [ext_resource path="res://DGodot/scripts/Interactions.gd" type="Script" id=35]
@@ -54,11 +53,9 @@
 [ext_resource path="res://DGodot/scenes/Souvenirs/Ruines_Tour.tscn" type="PackedScene" id=52]
 [ext_resource path="res://DGodot/scenes/Souvenirs/Panneau.tscn" type="PackedScene" id=53]
 [ext_resource path="res://DGodot/scenes/Souvenirs/ZoneNonMixte.tscn" type="PackedScene" id=54]
+[ext_resource path="res://DGodot/scenes/InteractionPartir.tscn" type="PackedScene" id=55]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 83.9053, 20.2272 )
-
-[sub_resource type="ShaderMaterial" id=2]
+[sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 43 )
 shader_param/rect_size = Vector2( 5904.12, 5669.19 )
 shader_param/texture_fond_size = Vector2( 1183, 630 )
@@ -85,6 +82,14 @@ anchor_right = 0.5
 margin_top = -34.0
 margin_bottom = -34.0
 
+[node name="Partir" parent="CanvasLayer" instance=ExtResource( 55 )]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+margin_top = -34.0
+margin_bottom = -34.0
+
 [node name="Dialogues" parent="CanvasLayer" instance=ExtResource( 6 )]
 visible = false
 
@@ -100,7 +105,7 @@ editor_draw_limits = true
 script = ExtResource( 33 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 724.377, 1626.72 )
+position = Vector2( 751.247, 1626.72 )
 script = ExtResource( 37 )
 
 [node name="ZonesSouvenir" type="Node2D" parent="."]
@@ -159,29 +164,13 @@ script = ExtResource( 35 )
 position = Vector2( 323.542, -1381.77 )
 script = ExtResource( 35 )
 
-[node name="Route" parent="ZonesSouvenir" instance=ExtResource( 23 )]
-visible = false
-position = Vector2( 725.5, 1394.53 )
+[node name="Velo" parent="ZonesSouvenir" instance=ExtResource( 23 )]
+position = Vector2( 753.81, 1512.02 )
 script = ExtResource( 35 )
 
 [node name="ZoneNonMixte" parent="ZonesSouvenir" instance=ExtResource( 54 )]
 position = Vector2( -2508.11, -1732.8 )
 script = ExtResource( 35 )
-
-[node name="velo" type="Node2D" parent="ZonesSouvenir"]
-position = Vector2( 745.688, 1537.94 )
-
-[node name="velo" type="Sprite" parent="ZonesSouvenir/velo"]
-position = Vector2( 2.24487, 0 )
-texture = ExtResource( 32 )
-offset = Vector2( 0.0183105, -40.8101 )
-script = ExtResource( 36 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="ZonesSouvenir/velo"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonesSouvenir/velo/StaticBody2D"]
-position = Vector2( -4.49487, -13.4847 )
-shape = SubResource( 1 )
 
 [node name="LD" type="Node2D" parent="."]
 
@@ -1141,7 +1130,7 @@ __meta__ = {
 }
 
 [node name="texturre_mix" type="Sprite" parent="LD/fond"]
-material = SubResource( 2 )
+material = SubResource( 1 )
 position = Vector2( -937.578, -963.604 )
 scale = Vector2( 1.96804, 1.88973 )
 z_index = -2990
