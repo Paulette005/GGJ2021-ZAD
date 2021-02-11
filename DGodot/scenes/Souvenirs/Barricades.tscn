@@ -33,7 +33,7 @@ offset = Vector2( -3.07745, -119.656 )
 script = ExtResource( 9 )
 
 [node name="Sprite5" type="Sprite" parent="."]
-position = Vector2( 126.486, 531.06 )
+position = Vector2( 185.219, 501.694 )
 texture = ExtResource( 7 )
 offset = Vector2( -3.96674, -48.0983 )
 script = ExtResource( 9 )
@@ -45,7 +45,7 @@ offset = Vector2( -0.0500488, -73.006 )
 script = ExtResource( 9 )
 
 [node name="Sprite15" type="Sprite" parent="."]
-position = Vector2( -142.975, 470.003 )
+position = Vector2( -97.5905, 475.342 )
 texture = ExtResource( 6 )
 offset = Vector2( 2.02597, -71.5485 )
 script = ExtResource( 9 )
@@ -97,8 +97,8 @@ position = Vector2( -788.46, -128.293 )
 shape = SubResource( 2 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2( 799.346, 375.383 )
-polygon = PoolVector2Array( -586.733, 151.19, -635.468, 178.736, -754.128, 206.282, -809.22, 172.379, -815.577, 136.357, -749.89, 91.8596, -584.614, 81.265, -571.9, 113.049 )
+position = Vector2( 858.079, 346.017 )
+polygon = PoolVector2Array( -545.805, 147.404, -635.468, 178.736, -754.128, 206.282, -823.301, 165.904, -824.983, 126.382, -749.89, 91.8596, -550.851, 81.8141, -530.669, 113.768 )
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2( -192.161, 446.324 )
@@ -109,7 +109,7 @@ position = Vector2( -826.132, 248.104 )
 polygon = PoolVector2Array( 380.288, -258.543, 402.651, -330.195, 494.693, -332.439, 613.112, -333.001, 640.809, -307.313, 666.264, -297.414, 660.254, -280.443, 655.304, -262.059, 584.396, -256.023, 479.822, -256.023 )
 
 [node name="CollisionShape2D11" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( -147.097, 435.016 )
+position = Vector2( -101.712, 440.355 )
 shape = SubResource( 2 )
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="StaticBody2D"]
